@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biovestin</title>
+    <link rel="stylesheet" href="./css/fm.revealator.jquery.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/fm.revealator.jquery.min.js"></script>
+
+    
+    <link rel="shortcut icon" href="./Favicons/Favicon1.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="ham_twin"></div>
+    <div class="hidden_menu hidden">
+        <div class="menu_wrapper">
+            <div class="top">
+                <div class="login">
+                    <img src="./Images/Header/Sign_in_icon.png" alt="sign_in_icon">
+                     <p>Вход</p>   
+                </div>
+                <div class="basket_wrapper">
+                    <div class="image">
+                        <img src="./Images/Header/Cart_icon.png" alt="cart" class="cart_icon">
+                        <p class="num_of_goods">3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden_categories">
+                <a href="#">Все товары</a>
+                <a href="#">Детское питание</a>
+                <a href="#">Пробиотики серии Биовестин</a>
+                <a href="#">Функциональное питание</a>
+            </div>
+            <div class="information">Информация</div>
+            <div class="info_wrapper">
+                <a class="info_item" href="#">Контакты</a>
+                <a class="info_item" href="#">Условия доставки и оплата</a>
+                <a class="info_item" href="#">О компании</a>
+                <a class="info_item" href="#">Отзывы</a>
+                <a class="info_item" href="#">Точки продаж</a>
+            </div>
+            <a class="help">Помощь покупателю</a>
+            <div class="search_input">
+                <img src="./Images/Header/Search_icon.png" alt="Search_icon">
+                <input type="text" class="search" placeholder="Поиск товаров">
+            </div>
+            <div class="hidden_footer">
+                <div class="social_icons">
+                    <img src="./Images/Header/Instagram_white_icon.png" alt="insta">
+                    <img src="./Images/Header/vk_white_icon.png" alt="vk">
+                </div>
+                <img src="./Images/Header/Aliance_white.png" alt="Alianse+" class="aliance">
+            </div>
+        </div>
+    </div>
+    <section class="main" id="main">
+        <header>
+            <div class="h_c_w">
+                <!-- скрытая корзина -->
+                <div class="hidden_cart">
+                    <div class="bridge"></div>
+                    <div class="header">
+                        <div class="number">В корзине 3 товара</div>
+                        <a href="#" class="order">Оформить заказ</a>
+                    </div>
+                    <div class="hidden_cart_item">
+                        <img src="./Images/Header/hidden_cart_image.png" alt="good">
+                        <div class="name">
+                            Тонус питьевой «Яблоко-Груша», 200 гр
+                        </div>
+                        <div class="quantity">
+                            <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                            <p class='itemsNumber'>1</p>
+                            <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                        </div>
+                        <div class="price">
+                            <div class="earlier">144 ₽</div>
+                            <div class="now">120 ₽</div>
+                        </div>
+                        <img src="./Images/Header/hidden_cart_delete.png" alt="delete" class="delete">
+                    </div>
+                    <hr>
+                    <div class="hidden_cart_item">
+                        <img src="./Images/Header/hidden_cart_image.png" alt="good">
+                        <div class="name">
+                            Тонус питьевой «Яблоко-Груша», 200 гр
+                        </div>
+                        <div class="quantity">
+                            <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                            <p class='itemsNumber'>1</p>
+                            <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                        </div>
+                        <div class="price">
+                            <div class="earlier">144 ₽</div>
+                            <div class="now">120 ₽</div>
+                        </div>
+                        <img src="./Images/Header/hidden_cart_delete.png" alt="delete" class="delete">
+                    </div>
+                    <hr>
+                    <div class="hidden_cart_item">
+                        <img src="./Images/Header/hidden_cart_image.png" alt="good">
+                        <div class="name">
+                            Тонус питьевой «Яблоко-Груша», 200 гр
+                        </div>
+                        <div class="quantity">
+                            <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                            <p class='itemsNumber'>1</p>
+                            <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                        </div>
+                        <div class="price">
+                            <div class="earlier">144 ₽</div>
+                            <div class="now">120 ₽</div>
+                        </div>
+                        <img src="./Images/Header/hidden_cart_delete.png" alt="delete" class="delete">
+                    </div>
+                    <div class="clear_cart">Очистить корзину</div>
+                </div>
+                <!-- конец скрытой корзины -->
+            </div>
+            <div class="top-menu">
+                <div class="top-menu_wrapper">
+                    <ul class="main-menu">
+                        <li>
+                          <a href="#" class="main-menu_catalog">Каталог товаров<div class="arrow_default"></div></a>
+                          <ul class="sub-menu">
+                            <li><a href="#" class="sub-menu_catalog">Каталог товаров<div class="arrow"></div></a></li>
+                            <li><a href="#">Детское питание</a></li>
+                            <li><a href="#">Пробиотики серии Биовестин</a></li>
+                            <li><a href="#">Функциональное питание</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Условия доставки и оплата</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                    <div class="search_input">
+                        <img src="./Images/Header/Search_icon.png" alt="Search_icon">
+                        <input type="text" class="search" placeholder="Поиск товаров">
+                    </div>
+                    <div class="basket_wrapper">
+                        <div class="image">
+                            <img src="./Images/Header/Cart_icon.png" alt="cart" class="cart_icon">
+                            <p class="num_of_goods">3</p>
+                        </div>
+                        <p class="sum">300 ₽</p>
+                    </div>
+                    <div class="login">
+                        <img src="./Images/Header/Sign_in_icon.png" alt="sign_in_icon">
+                         <p>Вход</p>   
+                    </div>
+                    
+
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_info">
+                <div class="bottom_info_wrapper">
+                    <div class="logo">
+                        <img src="./Images/Header/bio-vesta_logo.png" alt="logo">
+                    </div>
+                    <div class="city_selector">
+                        <img src="./Images/Header/Location_icon.png" alt="location">
+                        <p class="city">г. Новосибирск,<br> ул. Лесосечная, 3/1</p>
+                    </div>
+                    <div class="social_icons">
+                        <a href="#"><img src="./Images/Header/Instagram_icon.png" alt="instagram"></a>
+                        <a href="#"><img src="./Images/Header/VK_icon.png" alt="vkontakte"></a>
+                    </div>
+                    <div class="callback">
+                        <div class="descr">
+                            <p class="first">Диспетчер, с 09:00 до 19:00</p>
+                            <p class="second">8 (383) 292-59-37</p>
+                        </div>
+                        <a href="#" class="callback_button">
+                            Перезвоните мне
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="hidden">
+            <div class="logo">
+                <img src="./Images/Header/bio-vesta_logo.png" alt="logo">
+            </div>
+            <div class="basket_wrapper">
+                    <img src="./Images/Header/Cart_icon.png" alt="cart" class="cart_icon">
+                    <p class="num_of_goods">3</p>
+            </div>
+            
+            <div class="burg_wrapper">
+                <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" height="80">
+                    <path
+                        class="line top"
+                        d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                    <path
+                        class="line middle"
+                        d="m 70,50 h -40" />
+                    <path
+                        class="line bottom"
+                        d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+                </svg>
+            </div>
+        </header>
+        <div class="main_slider">
+            <div class="slider_wrapper">
+                <div class="slider_item active">
+                    <article>
+                        <header><p>Живые пробиотики</p>
+                            <span>
+                                c доставкой на дом<br> от производителя
+                            </span>
+                        </header>
+                        <div class="descr">
+                            В виде концентрата живых бифидобактерий, детского и функционального питания.<span>Без консервантов и химических добавок. Оказывают заметный эффект уже через 5-7 дней регулярного приёма. Оформите заказ на нашем сайте  и ожидайте курьера.</span> 
+                        </div>
+                        <div class="order_info">
+                            <div class="minimal_sum">
+                                <img src="./Images/Main/Delivery_icon.png" alt="delivery">
+                                <div class="descr">Минимальная сумма<br> заказа – 500 руб.<br>  Доставляем бесплатно!</div>
+                            </div>
+                            <div class="region">
+                                <img src="./Images/Main/Attention_icon.png" alt="region">
+                                <div class="descr">Прием заказов<br> только из Новосибирска. <br>В регионы не отправляем.</div>
+                            </div>
+                        </div>
+                        <a href="#" class="to_catalog">
+                            Перейти в каталог
+                        </a>
+                    </article>
+                    <img src="./Images/Main/main_slider.png" alt="slider-image-1" class="main_slider_image">
+                    <div class="goods_cards">
+                        <div class="good_card">
+                            <div class="name">
+                                Детское 
+                                питание</div>
+                            <img src="./Images/Main/card12_img1.png" alt="card12_img1" class="img1">
+                            <img src="./Images/Main/card12_img2.png" alt="card12_img2" class="img2">
+                            <div class="category_number">12</div>
+                        </div>
+                        <div class="good_card">
+                            <div class="name">
+                                Пробиотики 
+                                серии Биовестин</div>
+                            <img src="./Images/Main/card9_img1.png" alt="card12_img1" class="img1 card9_img1">
+                            <div class="category_number">9</div>
+                        </div>
+                        <div class="good_card">
+                            <div class="name">
+                                Функциональное 
+                                питание</div>
+                            <img src="./Images/Main/card8_img1.png" alt="card8_img1" class="img1 card8_img1">
+                            <img src="./Images/Main/card8_img2.png" alt="card8_img1" class="img2 card8_img2">
+                            <div class="category_number">8</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <article>
+                        <header><p>Живые пробиотики</p>
+                            <span>
+                                c доставкой на дом<br> от производителя
+                            </span>
+                        </header>
+                        <div class="descr">
+                            В виде концентрата живых бифидобактерий, детского и функционального питания. Без консервантов и химических добавок. Оказывают заметный эффект уже через 5-7 дней регулярного приёма. Оформите заказ на нашем сайте  и ожидайте курьера.
+                        </div>
+                        <div class="order_info">
+                            <div class="minimal_sum">
+                                <img src="./Images/Main/Delivery_icon.png" alt="delivery">
+                                <div class="descr">Минимальная сумма<br> заказа – 500 руб.<br>  Доставляем бесплатно!</div>
+                            </div>
+                            <div class="region">
+                                <img src="./Images/Main/Attention_icon.png" alt="region">
+                                <div class="descr">Прием заказов<br> только из Новосибирска. <br>В регионы не отправляем.</div>
+                            </div>
+                        </div>
+                        <a href="#" class="to_catalog">
+                            Перейти в каталог
+                        </a>
+                    </article>
+                    <img src="./Images/Main/main_slider2.png" alt="slider-image-1" class="main_slider_image">
+                    <div class="goods_cards">
+                        <div class="good_card">
+                            <div class="name">
+                                Детское 
+                                питание</div>
+                            <img src="./Images/Main/card12_img1.png" alt="card12_img1" class="img1">
+                            <img src="./Images/Main/card12_img2.png" alt="card12_img2" class="img2">
+                            <div class="category_number">12</div>
+                        </div>
+                        <div class="good_card">
+                            <div class="name">
+                                Пробиотики 
+                                серии Биовестин</div>
+                            <img src="./Images/Main/card9_img1.png" alt="card12_img1" class="img1 card9_img1">
+                            <div class="category_number">9</div>
+                        </div>
+                        <div class="good_card">
+                            <div class="name">
+                                Функциональное 
+                                питание</div>
+                            <img src="./Images/Main/card8_img1.png" alt="card8_img1" class="img1 card8_img1">
+                            <img src="./Images/Main/card8_img2.png" alt="card8_img1" class="img2 card8_img2">
+                            <div class="category_number">8</div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <article>
+                        <header><p>Живые пробиотики</p>
+                            <span>
+                                c доставкой на дом<br> от производителя
+                            </span>
+                        </header>
+                        <div class="descr">
+                            В виде концентрата живых бифидобактерий, детского и функционального питания. Без консервантов и химических добавок. Оказывают заметный эффект уже через 5-7 дней регулярного приёма. Оформите заказ на нашем сайте  и ожидайте курьера.
+                        </div>
+                        <div class="order_info">
+                            <div class="minimal_sum">
+                                <img src="./Images/Main/Delivery_icon.png" alt="delivery">
+                                <div class="descr">Минимальная сумма<br> заказа – 500 руб.<br>  Доставляем бесплатно!</div>
+                            </div>
+                            <div class="region">
+                                <img src="./Images/Main/Attention_icon.png" alt="region">
+                                <div class="descr">Прием заказов<br> только из Новосибирска. <br>В регионы не отправляем.</div>
+                            </div>
+                        </div>
+                        <a href="#" class="to_catalog">
+                            Перейти в каталог
+                        </a>
+                    </article>
+                    <img src="./Images/Main/main_slider3.png" alt="slider-image-1" class="main_slider_image">
+                    <div class="goods_cards">
+                        <div class="good_card">
+                            <div class="name">
+                                Детское 
+                                питание</div>
+                            <img src="./Images/Main/card12_img1.png" alt="card12_img1" class="img1">
+                            <img src="./Images/Main/card12_img2.png" alt="card12_img2" class="img2">
+                            <div class="category_number">12</div>
+                        </div>
+                        <div class="good_card">
+                            <div class="name">
+                                Пробиотики 
+                                серии Биовестин</div>
+                            <img src="./Images/Main/card9_img1.png" alt="card12_img1" class="img1 card9_img1">
+                            <div class="category_number">9</div>
+                        </div>
+                        <div class="good_card">
+                            <div class="name">
+                                Функциональное 
+                                питание</div>
+                            <img src="./Images/Main/card8_img1.png" alt="card8_img1" class="img1 card8_img1">
+                            <img src="./Images/Main/card8_img2.png" alt="card8_img1" class="img2 card8_img2">
+                            <div class="category_number">8</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <section class="hits" id="hits">
+        <div class="wrapper">
+            <div class="header revealator-fade revealator-once">Хиты продаж</div>
+            <div class="hits_slider revealator-fade revealator-duration10 revealator-once">
+                <div class="hits_slider_wrapper">
+                        <div class="hits_slider_item">
+                            <div class="hit">Хит</div>
+                            <img class="card_image" src="./Images/Hits/slider_img_1.png" alt="1image">
+                            <p class="name">Биовестин, 12 мл,</p>
+                            <p class="descr">28 шт в упаковке</p>
+                            <p class="price">2500 ₽</p>
+                            <div class="bottom">
+                                <div class="quantity">
+                                    <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                                    <p class='itemsNumber'>1</p>
+                                    <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                                </div>
+                                <a href="#" class="toBasket">
+                                    <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
+                                    <p>В корзину</p> 
+                                </a>
+                            </div>
+                    
+                         </div>
+
+                    <div class="hits_slider_item">
+                        <div class="hit">Хит</div>
+                        <img class="card_image" src="./Images/Hits/slider_img_2.png" alt="1image">
+                        <p class="name">Биовестин-Лакто,</p>
+                        <p class="descr">12 мл, 7 шт в упаковке</p>
+                        <p class="price">300 ₽</p>
+                        <div class="bottom">
+                            <div class="quantity">
+                                <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                                <p class='itemsNumber'>1</p>
+                                <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                            </div>
+                            <a href="#" class="toBasket">
+                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
+                                <p>В корзину</p> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hits_slider_item">
+                        <div class="hit">Хит</div>
+                        <img class="card_image" src="./Images/Hits/slider_img_3.png" alt="1image">
+                        <p class="name">Бифилин-М</p>
+                        <p class="descr">без добавок, 200 гр.</p>
+                        <p class="price">70 ₽</p>
+                        <div class="bottom">
+                            <div class="quantity">
+                                <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                                <p class='itemsNumber'>1</p>
+                                <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                            </div>
+                            <a href="#" class="toBasket">
+                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
+                                <p>В корзину</p> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hits_slider_item">
+                        <div class="hit">Хит</div>
+                        <img class="card_image" src="./Images/Hits/slider_img_4.png" alt="1image">
+                        <p class="name">Бифилин-М</p>
+                        <p class="descr">сладкий, 200 гр</p>
+                        <p class="price">70 ₽</p>
+                        <div class="bottom">
+                            <div class="quantity">
+                                <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                                <p class='itemsNumber'>1</p>
+                                <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                            </div>
+                            <a href="#" class="toBasket">
+                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
+                                <p>В корзину</p> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hits_slider_item">
+                        <div class="hit">Хит</div>
+                        <img class="card_image" src="./Images/Hits/slider_img_1.png" alt="1image">
+                        <p class="name">Биовестин, 12 мл,</p>
+                        <p class="descr">28 шт в упаковке</p>
+                        <p class="price">2500 ₽</p>
+                        <div class="bottom">
+                            <div class="quantity">
+                                <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                                <p class='itemsNumber'>1</p>
+                                <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                            </div>
+                            <a href="#" class="toBasket">
+                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
+                                <p>В корзину</p> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hits_slider_item">
+                        <div class="hit">Хит</div>
+                        <img class="card_image" src="./Images/Hits/slider_img_2.png" alt="1image">
+                        <p class="name">Биовестин-Лакто,</p>
+                        <p class="descr">12 мл, 7 шт в упаковке</p>
+                        <p class="price">300 ₽</p>
+                        <div class="bottom">
+                            <div class="quantity">
+                                <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                                <p class='itemsNumber'>1</p>
+                                <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                            </div>
+                            <a href="#" class="toBasket">
+                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
+                                <p>В корзину</p> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hits_slider_item">
+                        <div class="hit">Хит</div>
+                        <img class="card_image" src="./Images/Hits/slider_img_3.png" alt="1image">
+                        <p class="name">Бифилин-М</p>
+                        <p class="descr">без добавок, 200 гр.</p>
+                        <p class="price">70 ₽</p>
+                        <div class="bottom">
+                            <div class="quantity">
+                                <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                                <p class='itemsNumber'>1</p>
+                                <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                            </div>
+                            <a href="#" class="toBasket">
+                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
+                                <p>В корзину</p> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hits_slider_item">
+                        <div class="hit">Хит</div>
+                        <img class="card_image" src="./Images/Hits/slider_img_4.png" alt="1image">
+                        <p class="name">Бифилин-М</p>
+                        <p class="descr">сладкий, 200 гр</p>
+                        <p class="price">70 ₽</p>
+                        <div class="bottom">
+                            <div class="quantity">
+                                <img src="./Images/Hits/minus.png" alt="minus" class='minus'>
+                                <p class='itemsNumber'>1</p>
+                                <img src="./Images/Hits/plus.png" alt="plus" class='plus'>
+                            </div>
+                            <a href="#" class="toBasket">
+                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
+                                <p>В корзину</p> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="look_more">Смотреть все товары ></a>
+        </div>
+
+    </section>
+    <section class="regular_intake">
+        <div class="wrapper">
+            <div class="pre_header">Что дает</div>
+            <div class="header_small">регулярный приём<br> наших продуктов?</div>
+            <div class="header revealator-zoomin revealator-once revealator-duration10">
+                Регулярный прием 
+                наших продуктов дает
+            </div>
+            <p class="descr revealator-fade revealator-once revealator-duration10">
+                Быстрое увеличение числа бифидобактерий в кишечнике
+                 способствует укреплению иммунитета и улучшению общего самочувствия
+            </p>
+            <div class="plusses revealator-slidedown revealator-once revealator-duration10">
+                <div class="plusses_item">
+                    <div class="img first">
+                        <!-- <img src="./Images/regular_intake/plusses1_icon.svg" alt="plus1"> -->
+                    </div>
+                    <p>Укрепляет общий
+                         иммунитет</p>
+                </div>
+                <div class="plusses_item">
+                    <div class="img second">
+                        <!-- <img src="./Images/regular_intake/plusses1_icon.svg" alt="plus1"> -->
+                    </div>
+                    <p>Улучшает 
+                        пищеварение</p>
+                </div>
+                <div class="plusses_item">
+                    <div class="img third">
+        
+                    </div>
+                    <p>Облегчает работу
+                         печени</p>
+                </div>
+                <div class="plusses_item">
+                    <div class="img fourth"></div>
+                    <p>Улучшает 
+                        состояние кожи</p>
+                    </div>
+                <div class="plusses_item">
+                    <div class="img fifth"></div>
+                    <p>Помогает 
+                        выводить токсины</p>
+                </div>
+                <div class="plusses_item">
+                    <div class="img sixth"></div>
+                    <p>Устраняет
+                         причину аллергии</p>
+                </div>
+            </div>
+            <div class="plusses_hidden revealator-slidedown revealator-once revealator-duration10">
+                <div class="plusses_item">
+                    <div class="img first"></div>
+                    <p>Укрепляет общий
+                         иммунитет</p>
+                </div>
+                <div class="plusses_item">
+                    <div class="img second"></div>
+                    <p>Улучшает 
+                        пищеварение</p>
+                </div>
+                <div class="plusses_item">
+                    <div class="img third"></div>
+                    <p>Облегчает работу
+                         печени</p>
+                </div>
+                <div class="plusses_item">
+                    <div class="img fourth"></div>
+                    <p>Улучшает 
+                        состояние кожи</p>
+                </div>
+                <div class="plusses_item">
+                    <div class="img fifth"></div>
+                    <p>Помогает 
+                        выводить токсины</p>
+                </div>
+                <div class="plusses_item">
+                    <div class="img sixth"></div>
+                    <p>Устраняет
+                         причину аллергии</p>
+                </div>
+            </div>
+            <a href="#" class="to_catalog revealator-slidedown revealator-once revealator-duration10">
+                Перейти в каталог
+            </a>
+        </div>
+    </section>
+    <section class="for" id="for">
+        <div class="wrapper">
+            <div class="header revealator-slideup revealator-once revealator-duration10">«Биовестин» нужен тем,  кто</div>
+            <div class="for_tabs">
+                <div class="tab active revealator-fade revealator-once revealator-duration3">Ведёт здоровый образ жизни</div>
+                <div class="tab revealator-fade revealator-once revealator-duration5">Готовится стать мамой</div>
+                <div class="tab revealator-fade revealator-once revealator-duration7">Заботится о своих детях</div>
+                <div class="tab revealator-fade revealator-once revealator-duration9">Принимает антибиотики</div>
+                <div class="tab revealator-fade revealator-once revealator-duration11">Проходит химио- или лучевую терапию</div>
+            </div>
+            <select class="for_tabs_hidden">
+                <option class="tab active revealator-fade revealator-once revealator-duration3">Ведёт здоровый образ жизни</option>
+                <option class="tab revealator-fade revealator-once revealator-duration5">Готовится стать мамой</option>
+                <option class="tab revealator-fade revealator-once revealator-duration7">Заботится о своих детях</option>
+                <option class="tab revealator-fade revealator-once revealator-duration9">Принимает антибиотики</option>
+                <option class="tab revealator-fade revealator-once revealator-duration11">Проходит химио- или лучевую терапию</option>
+            </select>
+            <div class="tab_content">
+                <div class="tab_content_item active">
+                    <img class="big" src="./Images/for/tabs1.png" alt="tab1">
+                    <div class="feature left first revealator-fade revealator-once revealator-duration5">
+                        <p class="descr">Укрепляет иммунитет1</p>
+                        <img src="./Images/for/number1.png" alt="Num1" class="number">
+                    </div>
+                    <div class="feature left second revealator-fade revealator-once revealator-duration10">
+                        <p class="descr">Устраняет 
+                            последствия стресса1</p>
+                        <img src="./Images/for/number2.png" alt="Num2" class="number">
+                    </div>
+                    <div class="feature left third revealator-fade revealator-once revealator-duration15">
+                        <p class="descr">Нормализует 
+                            гормональный фон1</p>
+                        <img src="./Images/for/number3.png" alt="Num3" class="number">
+                    </div>
+                    <div class="feature right fourth revealator-fade revealator-once revealator-duration5">
+                        <p class="descr">Даёт 
+                            заряд бодрости1</p>
+                        <img src="./Images/for/number4.png" alt="Num4" class="number">
+                    </div>
+                    <div class="feature right fifth revealator-fade revealator-once revealator-duration10">
+                        <p class="descr">Предотвращает 
+                            появление аллергии</p>
+                        <img src="./Images/for/number5.png" alt="Num5" class="number">
+                    </div>
+                    <div class="feature right sixth revealator-fade revealator-once revealator-duration15">
+                        <p class="descr">Помогает 
+                            выводить токсины</p>
+                        <img src="./Images/for/number6.png" alt="Num6" class="number">
+                    </div>
+
+                </div>
+                <div class="tab_content_item">
+                    <img class="big" src="./Images/for/tabs2.png" alt="tab1">
+                    <div class="feature left first">
+                        <p class="descr">Укрепляет иммунитет2</p>
+                        <img src="./Images/for/number1.png" alt="Num1" class="number">
+                    </div>
+                    <div class="feature left second">
+                        <p class="descr">Устраняет 
+                            последствия стресса2</p>
+                        <img src="./Images/for/number2.png" alt="Num2" class="number">
+                    </div>
+                    <div class="feature left third">
+                        <p class="descr">Нормализует 
+                            гормональный фон2</p>
+                        <img src="./Images/for/number3.png" alt="Num3" class="number">
+                    </div>
+                    <div class="feature right fourth">
+                        <p class="descr">Даёт 
+                            заряд бодрости</p>
+                        <img src="./Images/for/number4.png" alt="Num4" class="number">
+                    </div>
+                    <div class="feature right fifth">
+                        <p class="descr">Предотвращает 
+                            появление аллергии</p>
+                        <img src="./Images/for/number5.png" alt="Num5" class="number">
+                    </div>
+                    <div class="feature right sixth">
+                        <p class="descr">Помогает 
+                            выводить токсины</p>
+                        <img src="./Images/for/number6.png" alt="Num6" class="number">
+                    </div>
+
+                </div>
+                <div class="tab_content_item">
+                    <img class="big" src="./Images/for/tabs3.png" alt="tab1">
+                    <div class="feature left first">
+                        <p class="descr">Укрепляет иммунитет3</p>
+                        <img src="./Images/for/number1.png" alt="Num1" class="number">
+                    </div>
+                    <div class="feature left second">
+                        <p class="descr">Устраняет 
+                            последствия стресса3</p>
+                        <img src="./Images/for/number2.png" alt="Num2" class="number">
+                    </div>
+                    <div class="feature left third">
+                        <p class="descr">Нормализует 
+                            гормональный фон3</p>
+                        <img src="./Images/for/number3.png" alt="Num3" class="number">
+                    </div>
+                    <div class="feature right fourth">
+                        <p class="descr">Даёт 
+                            заряд бодрости</p>
+                        <img src="./Images/for/number4.png" alt="Num4" class="number">
+                    </div>
+                    <div class="feature right fifth">
+                        <p class="descr">Предотвращает 
+                            появление аллергии</p>
+                        <img src="./Images/for/number5.png" alt="Num5" class="number">
+                    </div>
+                    <div class="feature right sixth">
+                        <p class="descr">Помогает 
+                            выводить токсины</p>
+                        <img src="./Images/for/number6.png" alt="Num6" class="number">
+                    </div>
+
+                </div>
+                <div class="tab_content_item">
+                    <img class="big" src="./Images/for/tabs4.png" alt="tab4">
+                    <div class="feature left first">
+                        <p class="descr">Укрепляет иммунитет4</p>
+                        <img src="./Images/for/number1.png" alt="Num1" class="number">
+                    </div>
+                    <div class="feature left second">
+                        <p class="descr">Устраняет 
+                            последствия стресса4</p>
+                        <img src="./Images/for/number2.png" alt="Num2" class="number">
+                    </div>
+                    <div class="feature left third">
+                        <p class="descr">Нормализует 
+                            гормональный фон4</p>
+                        <img src="./Images/for/number3.png" alt="Num3" class="number">
+                    </div>
+                    <div class="feature right fourth">
+                        <p class="descr">Даёт 
+                            заряд бодрости</p>
+                        <img src="./Images/for/number4.png" alt="Num4" class="number">
+                    </div>
+                    <div class="feature right fifth">
+                        <p class="descr">Предотвращает 
+                            появление аллергии</p>
+                        <img src="./Images/for/number5.png" alt="Num5" class="number">
+                    </div>
+                    <div class="feature right sixth">
+                        <p class="descr">Помогает 
+                            выводить токсины</p>
+                        <img src="./Images/for/number6.png" alt="Num6" class="number">
+                    </div>
+
+                </div>
+                <div class="tab_content_item">
+                    <img class="big" src="./Images/for/tabs5.png" alt="tab4">
+                    <div class="feature left first">
+                        <p class="descr">Укрепляет иммунитет5</p>
+                        <img src="./Images/for/number1.png" alt="Num1" class="number">
+                    </div>
+                    <div class="feature left second">
+                        <p class="descr">Устраняет 
+                            последствия стресса5</p>
+                        <img src="./Images/for/number2.png" alt="Num2" class="number">
+                    </div>
+                    <div class="feature left third">
+                        <p class="descr">Нормализует 
+                            гормональный фон5</p>
+                        <img src="./Images/for/number3.png" alt="Num3" class="number">
+                    </div>
+                    <div class="feature right fourth">
+                        <p class="descr">Даёт 
+                            заряд бодрости5</p>
+                        <img src="./Images/for/number4.png" alt="Num4" class="number">
+                    </div>
+                    <div class="feature right fifth">
+                        <p class="descr">Предотвращает 
+                            появление аллергии</p>
+                        <img src="./Images/for/number5.png" alt="Num5" class="number">
+                    </div>
+                    <div class="feature right sixth">
+                        <p class="descr">Помогает 
+                            выводить токсины</p>
+                        <img src="./Images/for/number6.png" alt="Num6" class="number">
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="buy_biovestin">Купить «Биовестин»</a>
+        </div>
+        
+    </section>
+    <section class="milk" id="milk">
+        <div class="wrapper">
+            <div class="header">
+                <p class="revealator-fade revealator-once revealator-duration15">Детское питание</p>  
+                <p class="second revealator-fade revealator-once revealator-duration15">Молочная кухня «Био-Весты»</p>
+            </div>
+            <div class="descr revealator-fade revealator-once revealator-duration15">Это полезные и вкусные продукты с бифидобактериями для здоровья малышей, начиная с 6–8 месяцев.</div>
+            <div class="container">
+                <img src="./Images/Milk/main_pic.png" alt="milk">
+                <div class="item first left revealator-fade revealator-once revealator-duration5">
+                    <div class="text">Строгий контроль качества
+                     на всех этапах </div>
+                     <img src="./Images/Milk/control.png" alt="control">
+                </div>
+                <div class="item second left revealator-fade revealator-once revealator-duration10">
+                    <div class="text">В составе живые
+                         бифидобактерии </div>
+                     <img src="./Images/Milk/bacteria.png" alt="bacteria">
+                </div>
+                <div class="item third left revealator-fade revealator-once revealator-duration15">
+                    <div class="text">Срок хранения
+                         до 5 суток </div>
+                     <img src="./Images/Milk/period.png" alt="period">
+                </div>
+                <div class="item fourth right revealator-fade revealator-once revealator-duration5">
+                    <div class="text">Только из натурального 
+                        молока </div>
+                     <img src="./Images/Milk/Natural_milk.png" alt="natural_milk">
+                </div>
+                <div class="item fifth right revealator-fade revealator-once revealator-duration10">
+                    <div class="text">Закваски на настоящих 
+                        кефирных грибках </div>
+                     <img src="./Images/Milk/realFungs.png" alt="realFungs">
+                </div>
+                <div class="item sixth right revealator-fade revealator-once revealator-duration15">
+                    <div class="text">Без консервантов 
+                        и красителей</div>
+                     <img src="./Images/Milk/No_conservants.png" alt="realFungs">
+                </div>
+
+            </div>
+            <a href="#" class="buy_baby_food">Купить детское питание</a>
+        </div>
+    </section>
+    <section class="functional_nutrition">
+        <div class="wrapper">
+            <header class="revealator-fade revealator-once revealator-duration10">Функциональное питание на каждый день</header>
+            <div class="descr revealator-fade revealator-once revealator-duration10">Продукты, которые помогают ежедневно оставаться в прекрасном 
+                настроении, поддерживают здоровье и иммунитет</div>
+            <div class="container descr revealator-slidedown revealator-once revealator-duration10">
+                <img class="big" src="./Images/functional_nutrition/Functional nutrition.png" alt="functional_nutrition">
+                <div class="items_wrapper">
+                    <div class="item">
+                        <div class="img first"></div>
+                        <div class="descr">Восстанавливает
+                             правильную 
+                             работу кишечника</div>
+                    </div>
+                    <div class="item second">
+                        <img src="./Images/functional_nutrition/Stress.png" alt="stress">
+                        <div class="descr">Помогает справляться 
+                            со стрессом</div>
+                    </div>
+                    <div class="item third">
+                        <img src="./Images/functional_nutrition/Immunity.png" alt="immunity">
+                        <div class="descr">Укрепляет 
+                            иммунитет</div>
+                    </div>
+                    <div class="item fourth">
+                        <img src="./Images/functional_nutrition/Toxins.png" alt="toxins">
+                        <div class="descr">Обезвреживает токсины 
+                            и защищает печень</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="buy_functional_nutrition descr">Купить функциональное питание</a>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="wrapper">
+            <header>
+                <p class="descr revealator-fade revealator-once revealator-duration10">Отзывы </p> 
+                <p class="second descr revealator-fade revealator-once revealator-duration10">наших покупателей</p>
+            </header>
+            <div class="container descr revealator-zoomin revealator-once revealator-duration10">
+                <div class="feedback_slider_wrapper">
+                    <div class="slider_item">
+                        <div class="top">
+                            <img src="./Images/feedback/man_icon.png" alt="man_icon">
+                            <div class="name">Алексей Давлатов</div>
+                        </div>
+                        <img src="./Images/feedback/Divider.png" alt="divider" class="divider">
+                        <div class="text">
+                            Все началось с того, что у моей дочи в 9,5
+                             месяцев случилось расстройство желудка, да
+                              такое…. казалось конца этому не будет. Диарея
+                               была страшенная. В течении двух недель поила
+                                ее Бифидумбактерином, Йогулактом, но
+                                 результата не было. Ножки ребенка за это
+                                  время покрылись корочками. Наша тетенька
+                                   врач ничего умнее придумать не смогла как
+                                    назвать «Линекс» (старперки, сами бы попили...
+                        </div>
+                        <a class="read_more">Читать полностью ></a>
+                        <img src="./Images/feedback/Quote_icon.png" alt="quote" class="quote">
+                    </div>
+                    <div class="slider_item">
+                        <div class="top">
+                            <img src="./Images/feedback/woman_icon.png" alt="woman_icon">
+                            <div class="name">Анастасия Ломина</div>
+                        </div>
+                        <img src="./Images/feedback/Divider.png" alt="divider" class="divider">
+                        <div class="text">
+                            Все началось с того, что у моей дочи в 9,5
+                             месяцев случилось расстройство желудка, да
+                              такое…. казалось конца этому не будет. Диарея
+                               была страшенная. В течении двух недель поила
+                                ее Бифидумбактерином, Йогулактом, но
+                                 результата не было. Ножки ребенка за это
+                                  время покрылись корочками. Наша тетенька
+                                   врач ничего умнее придумать не смогла как
+                                    назвать «Линекс» (старперки, сами бы попили...
+                        </div>
+                        <a class="read_more">Читать полностью ></a>
+                        <img src="./Images/feedback/Quote_icon.png" alt="quote" class="quote">
+                    </div>
+                    <div class="slider_item">
+                        <div class="top">
+                            <img src="./Images/feedback/man_icon.png" alt="man_icon">
+                            <div class="name">Александр Тараненко</div>
+                        </div>
+                        <img src="./Images/feedback/Divider.png" alt="divider" class="divider">
+                        <div class="text">
+                            Все началось с того, что у моей дочи в 9,5
+                             месяцев случилось расстройство желудка, да
+                              такое…. казалось конца этому не будет. Диарея
+                               была страшенная. В течении двух недель поила
+                                ее Бифидумбактерином, Йогулактом, но
+                                 результата не было. Ножки ребенка за это
+                                  время покрылись корочками. Наша тетенька
+                                   врач ничего умнее придумать не смогла как
+                                    назвать «Линекс» (старперки, сами бы попили...
+                        </div>
+                        <a class="read_more">Читать полностью ></a>
+                        <img src="./Images/feedback/Quote_icon.png" alt="quote" class="quote">
+                    </div>
+                    <div class="slider_item">
+                        <div class="top">
+                            <img src="./Images/feedback/man_icon.png" alt="man_icon">
+                            <div class="name">Алексей Давлатов</div>
+                        </div>
+                        <img src="./Images/feedback/Divider.png" alt="divider" class="divider">
+                        <div class="text">
+                            Все началось с того, что у моей дочи в 9,5
+                             месяцев случилось расстройство желудка, да
+                              такое…. казалось конца этому не будет. Диарея
+                               была страшенная. В течении двух недель поила
+                                ее Бифидумбактерином, Йогулактом, но
+                                 результата не было. Ножки ребенка за это
+                                  время покрылись корочками. Наша тетенька
+                                   врач ничего умнее придумать не смогла как
+                                    назвать «Линекс» (старперки, сами бы попили...
+                        </div>
+                        <a class="read_more">Читать полностью ></a>
+                        <img src="./Images/feedback/Quote_icon.png" alt="quote" class="quote">
+                    </div>
+                    <div class="slider_item">
+                        <div class="top">
+                            <img src="./Images/feedback/woman_icon.png" alt="woman_icon">
+                            <div class="name">Анастасия Ломина</div>
+                        </div>
+                        <img src="./Images/feedback/Divider.png" alt="divider" class="divider">
+                        <div class="text">
+                            Все началось с того, что у моей дочи в 9,5
+                             месяцев случилось расстройство желудка, да
+                              такое…. казалось конца этому не будет. Диарея
+                               была страшенная. В течении двух недель поила
+                                ее Бифидумбактерином, Йогулактом, но
+                                 результата не было. Ножки ребенка за это
+                                  время покрылись корочками. Наша тетенька
+                                   врач ничего умнее придумать не смогла как
+                                    назвать «Линекс» (старперки, сами бы попили...
+                        </div>
+                        <a class="read_more">Читать полностью ></a>
+                        <img src="./Images/feedback/Quote_icon.png" alt="quote" class="quote">
+                    </div>
+                    <div class="slider_item">
+                        <div class="top">
+                            <img src="./Images/feedback/man_icon.png" alt="man_icon">
+                            <div class="name">Александр Тараненко</div>
+                        </div>
+                        <img src="./Images/feedback/Divider.png" alt="divider" class="divider">
+                        <div class="text">
+                            Все началось с того, что у моей дочи в 9,5
+                             месяцев случилось расстройство желудка, да
+                              такое…. казалось конца этому не будет. Диарея
+                               была страшенная. В течении двух недель поила
+                                ее Бифидумбактерином, Йогулактом, но
+                                 результата не было. Ножки ребенка за это
+                                  время покрылись корочками. Наша тетенька
+                                   врач ничего умнее придумать не смогла как
+                                    назвать «Линекс» (старперки, сами бы попили...
+                        </div>
+                        <a class="read_more">Читать полностью ></a>
+                        <img src="./Images/feedback/Quote_icon.png" alt="quote" class="quote">
+                    </div>
+                </div>
+                <a href="#" class="read_all_feedback descr">Читать все отзывы</a>
+            </div>
+        </div>
+    </section>
+    <section class="hotline">
+        <div class="wrapper">
+            <div class="hotline_item descr revealator-slidedown revealator-once revealator-duration10">
+                <header>Горячая линия</header>
+                <p class="descr">Консультирует специалист</p>
+                <a href="tel: +78005003343" class="tel">8(800) 500-33-43</a>
+                <a href="#" class="callback_button">
+                    Перезвоните мне
+                </a>
+                <img src="./Images/hotline/Doctor.png" alt="doctor">
+            </div>
+            <form action="post" class="subscribe descr revealator-slideup revealator-once revealator-duration10" id="hot_line_subscribe">
+                <div class="header">Подпишитесь на новости об акциях и скидках!</div>
+                
+                <input type='text' placeholder="Ваше имя" id='name1' name='name'>
+                
+                <input type='email' placeholder="Ваш email" id='email1' name='email'>
+                <input type="submit" value="Подписаться" class="subscribe1">
+                <div class="checkbox">
+                    <input type="checkbox" name="agree" id="agree1">
+                    <label for="agree1"><span></span>Я согласен с условиями обработки персональных данных</label>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="top">
+                <div class="logo descr revealator-fade revealator-once revealator-duration5">
+                    <img src="./Images/Header/bio-vesta_logo.png" alt="logo">
+                </div>
+                <div class="info column revealator-fade revealator-once revealator-duration10">
+                    <div class="header">Информация</div>
+                    <a href="#">Условия доставки и оплата</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Точки продаж</a>
+                </div>
+                <div class="help column revealator-fade revealator-once revealator-duration15">
+                    <div class="header">Помощь покупателю</div>
+                    <a href="#">Публичная оферта</a>
+                    <a href="#">Разрешительные документы</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Правила обмена и возврата</a>
+                    <a href="#">Рекоммендации по применению</a>
+                </div>
+                <div class="contacts column revealator-fade revealator-once revealator-duration19">
+                    <div class="header">Наши контакты</div>
+                    <a class="tel" href="tel: 83832925937">8(383) 292-59-373 <span> Диспетчер, с 09 до 19</span></a>
+                    <a class="tel" href="tel: 88005003343">8(800) 500-33-43 <span> Горячая линия</span></a>
+                    <p>г. Новосибирск, ул. Лесосечная, 3/1</p>
+                    <a href="mailto:dostavka@biovesta.ru">dostavka@biovesta.ru</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="divider"></div>
+        <div class="attention">БАД. НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ. ДЕТЯМ ДО 14 ЛЕТ ТРЕБУЕТСЯ КОНСУЛЬТАЦИЯ ПЕДИАТРА.</div>
+        <div class="bottom">
+            <div class="bottom_wrapper">
+                <div class="social_icons">
+                    <a href="#"><img src="./Images/Header/Instagram_icon.png" alt="instagram"></a>
+                    <a href="#"><img src="./Images/Header/VK_icon.png" alt="vkontakte"></a>
+                </div>
+                <a href="#" class="subscribe">Подписатся на e-mail рассылку</a>
+                <div class="search_input">
+                    <img src="./Images/Header/Search_icon.png" alt="Search_icon">
+                    <input type="text" class="search" placeholder="Поиск товаров">
+                </div>
+                <a class="aliance" href="https://alianscompany.ru/" target="blank"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/slick.js"></script>
+    <script src="./js/slider_hits.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
