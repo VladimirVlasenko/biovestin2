@@ -32,10 +32,10 @@
         padding: 25px;
         margin: 0 auto;
     }
-    .main .main_slider .slider_wrapper .slider_item .goods_cards {
+    .main  .goods_cards {
         flex-direction: column;
     }
-    .main .main_slider .slider_wrapper .slider_item .goods_cards .good_card {
+    .main  .goods_cards .good_card {
         margin-bottom: 20px;
     }
     .main .main_slider .slider_wrapper .slider_item article .to_catalog {
@@ -242,6 +242,9 @@
 
 }
 @media screen and (max-width:800px) {
+    .main .main_slider {
+        min-height: 480px;
+    }
     .main .main_slider .slider_wrapper .slider_item article header  {
         font-size: 16px;
         line-height: 34px;
@@ -441,6 +444,21 @@ line-height: 16px;
     .milk .wrapper .container .item.fifth {
         display: none;
     }
+    .functional_nutrition .wrapper header {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .functional_nutrition .wrapper header span {
+        display: none;
+    }
+    .functional_nutrition .wrapper .descr {
+        display: none;
+    }
+    .functional_nutrition .wrapper .container .items_wrapper .item .descr {
+        display: block;
+        font-size: 14px;
+        line-height: 16px;
+    }
     .functional_nutrition .wrapper .container img.big {
         width: 80%;
     }
@@ -515,24 +533,24 @@ line-height: 16px;
     .main .main_slider .slider_wrapper .slider_item article .order_info {
         width: 100%;
     }
-    .main .main_slider .slider_wrapper .slider_item .goods_cards .good_card {
+    .main .goods_cards .good_card {
         width: 272px;
         height: 92px;
     }
-    .main .main_slider .slider_wrapper .slider_item .goods_cards .good_card .name {
+    .main  .goods_cards .good_card .name {
         bottom: 6px;
         font-size: 14px;
         line-height: 16px;
     }
-    .main .main_slider .slider_wrapper .slider_item .goods_cards .good_card .img1.card9_img1 {
+    .main  .goods_cards .good_card .img1.card9_img1 {
         bottom: -17px;
     }
-    .main .main_slider .slider_wrapper .slider_item .goods_cards .good_card .img1 {
+    .main  .goods_cards .good_card .img1 {
         width: 93px;
         height: 102px;
         right: 2px;
     }
-    .main .main_slider .slider_wrapper .slider_item .goods_cards .good_card .img2 {
+    .main  .goods_cards .good_card .img2 {
         width: 46px;
         height: 90px;
         right: 3px;
@@ -577,7 +595,7 @@ line-height: 16px;
 }
 @media screen and (max-width:470px) {
     section.main {
-        min-height: 1200px;
+        min-height: 1000px;
     }
     header.hidden {
         height: 80px;

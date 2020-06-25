@@ -1050,11 +1050,9 @@ a:hover {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 977px;
+    min-height: 577px;
     animation: fadeInRight;
     animation-duration: 1s;
-
-
 }
 
 .main .main_slider .slider_wrapper {
@@ -1187,7 +1185,7 @@ a:hover {
     box-shadow: 0px 0px -250px 200px #FFFFFF;
 }
 
-.main .main_slider .slider_wrapper .slider_item .goods_cards {
+.main .goods_cards {
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -1197,7 +1195,7 @@ a:hover {
     position: relative;
 }
 
-.main .main_slider .slider_wrapper .slider_item .goods_cards .good_card {
+.main .goods_cards .good_card {
     width: 384px;
     height: 168px;
     background: rgba(255, 255, 255, 0.7);
@@ -1208,12 +1206,12 @@ a:hover {
     position: relative;
 }
 
-.main .main_slider .slider_wrapper .slider_item .goods_cards .good_card:hover {
+.main .goods_cards .good_card:hover {
     cursor: pointer;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, #FFFFFF 100%);
 }
 
-.main .main_slider .slider_wrapper .slider_item .goods_cards .good_card .name {
+.main .goods_cards .good_card .name {
     font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1226,7 +1224,7 @@ a:hover {
     white-space: pre-line;
 }
 
-.main .main_slider .slider_wrapper .slider_item .goods_cards .good_card .img1 {
+.main .goods_cards .good_card .img1 {
     position: absolute;
     width: 164px;
     height: 180px;
@@ -1235,12 +1233,12 @@ a:hover {
     position: 0;
 }
 
-.main .main_slider .slider_wrapper .slider_item .goods_cards .good_card .img1.card9_img1 {
+.main .goods_cards .good_card .img1.card9_img1 {
     right: 0;
     bottom: -7px;
 }
 
-.main .main_slider .slider_wrapper .slider_item .goods_cards .good_card .img2 {
+.main .goods_cards .good_card .img2 {
     position: absolute;
     width: 81px;
     height: 160px;
@@ -1249,7 +1247,7 @@ a:hover {
     position: 0;
 }
 
-.main .main_slider .slider_wrapper .slider_item .goods_cards .good_card .category_number {
+.main .goods_cards .good_card .category_number {
     position: absolute;
     width: 32px;
     height: 24px;
