@@ -379,6 +379,27 @@ line-height: 16px;
         font-size: 14px;
         line-height: 16px;
     }
+    .milk .wrapper .container .main_img {
+        height: 296px;
+        background: url('../Images/Milk/main_pic_mobile.png') no-repeat center center;
+    }
+    .milk .wrapper .container .item {
+        flex-direction: column-reverse !important;
+        min-width: 100px;
+        align-items: center !important;
+        justify-content: flex-end;
+        width: 50%;
+        height: 270px;
+    }
+    .milk .wrapper .container .item .img {
+        transform: scale(0.7);
+    }
+    .milk .wrapper .container .item .text {
+        text-align: center !important;
+        font-size: 14px;
+        line-height: 16px;
+        width: 100%;
+    }
     .feedback .wrapper .container .feedback_slider_wrapper .slider_item .divider {
         display: none;
     }
@@ -421,22 +442,12 @@ line-height: 16px;
     .milk .wrapper {
         padding-top: 20px;
     }
-    .milk .wrapper .container .item {
-        flex-direction: column-reverse !important;
-        min-width: 100px;
-        align-items: center !important;
-        justify-content: flex-end;
-        width: 50%;
-        height: 270px;
-    }
-    .milk .wrapper .container .item .text {
-        text-align: center !important;
-        font-size: 14px;
-        line-height: 16px;
-        width: 100%;
-    }
+
     .milk .wrapper .buy_baby_food {
         font-size: 16px;
+    }
+    .milk .wrapper .container .item {
+        height: 180px;
     }
     .milk .wrapper .container .item.sixth {
         display: none;
@@ -586,8 +597,16 @@ line-height: 16px;
         margin: 0;
         padding: 0;
     }
+    .for .wrapper .tab_content .tab_content_item .feature {
+        margin-bottom: 37px !important;
+    }
+    .milk {
+        height: auto;
+        min-height: 1000px;
+    }
     .milk .wrapper .buy_baby_food {
         width: 100%;
+        margin-bottom: 30px;
     }
     .feedback .wrapper {
         padding-top: 20px;

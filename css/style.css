@@ -643,7 +643,7 @@ header .bottom_info .bottom_info_wrapper .callback .callback_button::after {
     width: 4.5px;
     height: 8px;
     background: url('../Images/Header/Arrow_callBack.png') no-repeat center center;
-    top: 22px;
+    top: 21px;
     right: 20px;
 }
 
@@ -1935,7 +1935,7 @@ a:hover {
     align-items: center;
 }
 .for .wrapper .tab_content .tab_content_item.active .feature:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -2072,6 +2072,14 @@ a:hover {
     align-items: center;
 }
 
+.milk .wrapper .container .main_img {
+    width: 600px;
+    height: 520px;
+    background: url('../Images/Milk/main_pic.png') no-repeat center center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 /* Пример СТилей из другого раздела */
 
 
@@ -2103,6 +2111,45 @@ a:hover {
     background: url('../Images/Milk/control2.svg')  no-repeat center center;
     cursor: pointer;
 }
+.milk .wrapper .container .item .img.second {
+    background: url('../Images/Milk/bacteria1.svg') no-repeat center center;
+}
+.milk .wrapper .container .item .img.second:hover {
+    background: url('../Images/Milk/bacteria2.svg')  no-repeat center center;
+    cursor: pointer;
+}
+
+.milk .wrapper .container .item .img.third {
+    background: url('../Images/Milk/period1.svg') no-repeat center center;
+}
+.milk .wrapper .container .item .img.third:hover {
+    background: url('../Images/Milk/period2.svg')  no-repeat center center;
+    cursor: pointer;
+}
+
+.milk .wrapper .container .item .img.fourth {
+    background: url('../Images/Milk/natural_milk1.svg') no-repeat center center;
+}
+.milk .wrapper .container .item .img.fourth:hover {
+    background: url('../Images/Milk/natural_milk2.svg')  no-repeat center center;
+    cursor: pointer;
+}
+
+.milk .wrapper .container .item .img.fifth {
+    background: url('../Images/Milk/fungs1.svg') no-repeat center center;
+}
+.milk .wrapper .container .item .img.fifth:hover {
+    background: url('../Images/Milk/fungs2.svg')  no-repeat center center;
+    cursor: pointer;
+}
+
+.milk .wrapper .container .item .img.sixth {
+    background: url('../Images/Milk/noconserve1.svg') no-repeat center center;
+}
+.milk .wrapper .container .item .img.sixth:hover {
+    background: url('../Images/Milk/noconserve2.svg')  no-repeat center center;
+    cursor: pointer;
+}
 
 .milk .wrapper .container .item .text {
     white-space: pre-line;
@@ -2125,33 +2172,33 @@ a:hover {
 }
 
 .milk .wrapper .container .item.first {
-    left: 9%;
-    top: -2%;
+    left: 10.3%;
+    top: -1%;
 }
 
 .milk .wrapper .container .item.second {
-    left: 9%;
-    top: 37%;
+    left: 8.6%;
+    top: 38%;
 }
 
 .milk .wrapper .container .item.third {
     left: 18%;
-    top: 76%;
+    top: 76.5%;
 }
 
 .milk .wrapper .container .item.fifth {
-    right: 3.5%;
-    top: 37%;
+    right: 5.0%;
+    top: 38%;
 }
 
 .milk .wrapper .container .item.fourth {
-    right: 12%;
-    top: -2%;
+    right: 13.3%;
+    top: -1%;
 }
 
 .milk .wrapper .container .item.sixth {
-    right: 17%;
-    top: 76%;
+    right: 17.1%;
+    top: 76.3%;
 }
 
 /* Конец стилизации milk item */
@@ -2190,6 +2237,8 @@ a:hover {
     box-sizing: border-box;
     padding-top: 81px;
     margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .functional_nutrition .wrapper header {
