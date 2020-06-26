@@ -232,6 +232,26 @@ header .h_c_w .hidden_cart .hidden_cart_item .quantity p {
     text-align: center;
     color: #4C6579;
 }
+/* ИНъекция стилей другого раздела */
+header .h_c_w .hidden_cart .hidden_cart_item .quantity .img.minus {
+    width: 18px;
+    height: 28px;
+    background: url('../Images/Hits/minus.png') no-repeat center center;
+}
+header .h_c_w .hidden_cart .hidden_cart_item .quantity .img.plus {
+    width: 18px;
+    height: 28px;
+    background: url('../Images/Hits/plus.png') no-repeat center center;
+}
+header .h_c_w .hidden_cart .hidden_cart_item .quantity .img.plus:hover {
+    cursor: pointer;
+    background:rgba(223, 83, 9, 0.15) url('../Images/Hits/plus.png') no-repeat center center;
+}
+header .h_c_w .hidden_cart .hidden_cart_item .quantity .img.minus:hover {
+    cursor: pointer;
+    background:rgba(223, 83, 9, 0.15) url('../Images/Hits/minus.png') no-repeat center center;
+}
+/* Инъекция стилей другого раздела */
 
 header .h_c_w .hidden_cart .hidden_cart_item .price {
     width: 76px;
@@ -395,7 +415,7 @@ header .main-menu .sub-menu li a {
 }
 
 header .top-menu_wrapper .search_input {
-    width: 192px;
+    width: auto;
     height: 40px;
     position: relative;
     border-radius: 29px;
@@ -403,12 +423,13 @@ header .top-menu_wrapper .search_input {
     transition-duration: all 0.7s;
 }
 
-header .top-menu_wrapper .search_input:hover input {
+header .top-menu_wrapper .search_input input:focus {
     cursor: pointer;
-    width: 220px;
-    transform: translateX(-20px);
+    width: 210px;
+    
     
 }
+
 
 header .top-menu_wrapper .search_input input {
     width: 192px;
@@ -1305,7 +1326,10 @@ a:hover {
 }
 
 .hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item {
+    margin: 0 auto;
+    display: block !important;
     width: 280px !important;
+    text-align: center;
     height: 424px;
     border: 3px solid rgba(219, 236, 240, 0.7);
     box-sizing: border-box;
@@ -1400,9 +1424,23 @@ a:hover {
     color: #4C6579;
 }
 
-.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .bottom .quantity img:hover {
+.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .bottom .quantity .img.minus {
+    width: 18px;
+    height: 28px;
+    background: url('../Images/Hits/minus.png') no-repeat center center;
+}
+.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .bottom .quantity .img.plus {
+    width: 18px;
+    height: 28px;
+    background: url('../Images/Hits/plus.png') no-repeat center center;
+}
+.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .bottom .quantity .img.plus:hover {
     cursor: pointer;
-    transform: scale(2);
+    background:rgba(223, 83, 9, 0.15) url('../Images/Hits/plus.png') no-repeat center center;
+}
+.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .bottom .quantity .img.minus:hover {
+    cursor: pointer;
+    background:rgba(223, 83, 9, 0.15) url('../Images/Hits/minus.png') no-repeat center center;
 }
 
 .hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .bottom .toBasket {
@@ -1461,10 +1499,7 @@ a:hover {
 
 .hits .wrapper .look_more:hover {
     cursor: pointer;
-    color: #ffffff;
-    background-color: #DF5309;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px 5px #df5309;
+    color: #00AB8E;
 }
 
 .regular_intake {
@@ -2855,7 +2890,7 @@ footer .bottom .bottom_wrapper .subscribe::before {
 }
 
 footer .bottom .bottom_wrapper .search_input {
-    width: 192px;
+    width: auto;
     height: 40px;
     position: relative;
 
@@ -2877,6 +2912,9 @@ footer .bottom .bottom_wrapper .search_input input {
     font-size: 14px;
     line-height: 16px;
 
+}
+footer .bottom .bottom_wrapper .search_input input:focus {
+    width: 210px;
 }
 
 footer .bottom .bottom_wrapper .search_input img {
