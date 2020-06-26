@@ -1249,24 +1249,11 @@ a:hover {
     position: absolute;
     width: 164px;
     height: 180px;
-    right: 15px;
-    bottom: 0px;
+    right: 0px;
+    bottom: -10px;
     position: 0;
 }
 
-.main .goods_cards .good_card .img1.card9_img1 {
-    right: 0;
-    bottom: -7px;
-}
-
-.main .goods_cards .good_card .img2 {
-    position: absolute;
-    width: 81px;
-    height: 160px;
-    right: 31px;
-    bottom: 0px;
-    position: 0;
-}
 
 .main .goods_cards .good_card .category_number {
     position: absolute;
@@ -2295,17 +2282,17 @@ a:hover {
 
 
 .functional_nutrition .wrapper .container .items_wrapper .item .img {
-    width: 108px;
-    height:108px;
+    width: 86px;
+    height:86px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3px;
     box-sizing: border-box;
-    margin-right: 20px;
+    /* margin-right: 20px;
     margin-left: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
 }
 .functional_nutrition .wrapper .container .items_wrapper .item .img.first {
     background: url('../Images/functional_nutrition/Intestine1.svg') no-repeat center center;

@@ -570,19 +570,12 @@ line-height: 16px;
         font-size: 14px;
         line-height: 16px;
     }
-    .main  .goods_cards .good_card .img1.card9_img1 {
-        bottom: -17px;
-    }
+
     .main  .goods_cards .good_card .img1 {
         width: 93px;
         height: 102px;
-        right: 2px;
     }
-    .main  .goods_cards .good_card .img2 {
-        width: 46px;
-        height: 90px;
-        right: 3px;
-    }
+
     .main .main_slider .slider_wrapper .slider_item article header br {
         display: none;
     }
