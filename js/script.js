@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             if(!event.target.closest('.sub-menu') && !event.target.closest('.main-menu')) {
                 subMenuCatalog.classList.remove('clicked');
                 subMenu.style.display='none';
-                console.log('asdf');
             }
         })
 

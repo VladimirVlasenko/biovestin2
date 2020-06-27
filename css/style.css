@@ -1491,7 +1491,6 @@ a:hover {
 }
 
 .regular_intake {
-    min-height: 1144px;
     background: url('../Images/regular_intake/regular_bg.jpg') no-repeat center center;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -1504,6 +1503,8 @@ a:hover {
 .regular_intake .wrapper {
     position: relative;
     padding-top: 221px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
 }
 
 .regular_intake .wrapper .header {
@@ -1525,7 +1526,6 @@ a:hover {
     line-height: 34px;
     text-align: center;
     color: #223038;
-    margin-top: 127px;
     display: none;
 }
 .regular_intake .wrapper .header_small {

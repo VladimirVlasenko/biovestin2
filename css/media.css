@@ -107,7 +107,7 @@
     }
     .feedback .wrapper .container .feedback_slider_wrapper .slick-prev,
     .feedback .wrapper .container .feedback_slider_wrapper .slick-next {
-        display: none;
+        display: none !important;
     }
     .feedback .wrapper .container .slick-dots li button:before {
         content: '';
@@ -282,9 +282,9 @@ line-height: 16px;
         font-size: 14px;
         line-height: 16px;
     }
-    .regular_intake {
+    /* .regular_intake {
         min-height: 900px;
-    }
+    } */
     .regular_intake .wrapper .plusses_hidden {
         display: block;
         position: relative;
