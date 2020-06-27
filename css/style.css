@@ -3517,7 +3517,177 @@ footer .bottom .bottom_wrapper .aliance {
     text-align: center;
 
 }
+/* МОбильные категории */
+.catalog_main .wrapper .categories_mobile {
+    margin-bottom: 20px;
+    display: none;
+}
+.catalog_main .wrapper .categories_mobile:hover {
+    cursor: pointer;
+}
+.catalog_main .wrapper .categories_mobile .category_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 248px;
+    height: 40px;
+    padding-left: 58px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 272px;
+    background: linear-gradient(180deg, #00D1B3 0%, #00AB8E 100%);
+    border-radius: 31px;
+    margin-left: 20px;
+}
 
+
+.catalog_main .wrapper .categories_mobile .category_item input {
+    display: block;
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 5px;
+
+}
+.catalog_main .wrapper .categories_mobile .category_item label {
+
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: #FFFFFF;
+    position: relative;    
+}
+.catalog_main .wrapper .categories_mobile .category_item .arrow {
+    width: 2px;
+    height: 5px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    color: #ffffff;
+
+}
+
+.catalog_main .wrapper .categories_mobile .category_item label span {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: 10px;
+    background: url('../Images/Catalog/radio.png') no-repeat center center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px #FFFFFF;
+    
+}
+
+.catalog_main .wrapper .categories_mobile .category_item input[type="radio"]:checked+label span {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: 10px;
+    background: url('../Images/Catalog/radio_unchecked.png') no-repeat center center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 2px #FFFFFF;
+}
+/* Конец мобильных категорий */
+/* Скрытые категории */
+.catalog_main .wrapper .categories_hidden {
+    display: none;
+    width: 272px;
+    height:auto;
+    background: linear-gradient(180deg, #00D1B3 0%, #00AB8E 100%);
+    border-radius: 19px;
+    margin-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    margin-top: 16px;
+}
+.catalog_main .wrapper .categories_hidden.visible {
+    display: block;
+}
+.catalog_main .wrapper .categories_hidden .category_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 248px !important;
+    height: 40px;
+    padding-left: 48px;
+    box-sizing: border-box;
+    border-radius: 19px;
+    margin-left: 10px;
+    
+}
+.catalog_main .wrapper .categories_hidden hr {
+    width: 280px;
+    height: 4px;
+    border: none;
+    background: url(../Images/Catalog/Divider_categories.png) no-repeat center center;
+    transform: translateX(-24px);
+}
+
+.catalog_main .wrapper .categories_hidden .category_item input {
+    display: block;
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 5px;
+
+}
+.catalog_main .wrapper .categories_hidden .category_item label {
+    display: block;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    position: relative;    
+}
+
+.catalog_main .wrapper .categories_hidden .category_item label span {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: 0px;
+    background: url('../Images/Catalog/radio.png') no-repeat center center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px #FFFFFF;
+    
+}
+
+.catalog_main .wrapper .categories_hidden .category_item input[type="radio"]:checked+label span {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: 0px;
+    background: url('../Images/Catalog/radio_unchecked.png') no-repeat center center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 2px #FFFFFF;
+}
+/* Конец скрытых категорий */
 
 
 

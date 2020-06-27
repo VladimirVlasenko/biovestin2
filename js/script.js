@@ -294,5 +294,53 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if(goodsWrapper) {
         document.addEventListener('click', goodsWrapperPlusMinus)
     }
+
+    // Появление скрытых категорий в каталоге
+    let mobileCategories = document.querySelector('.categories_mobile');
+    let hiddenCategories = document.querySelector('.categories_hidden');
+    
+    if(mobileCategories) {
+        let mobileCategoriesArrow = mobileCategories.querySelector('.arrow');
+        document.addEventListener('click', (event) => {
+            if(event.target.closest('.categories_mobile') && !hiddenCategories.classList.contains('visible')) {
+                hiddenCategories.classList.add('visible');
+                mobileCategoriesArrow.textContent="⌃";
+                mobileCategoriesArrow.style.top="10px";
+
+
+            } else if(event.target.closest('.categories_mobile') && hiddenCategories.classList.contains('visible')) {
+                hiddenCategories.classList.remove('visible');
+                mobileCategoriesArrow.textContent="⌄";
+                mobileCategoriesArrow.style.top="5px";
+            }
+        })
+    }
+    // конец появления скрытых категорий в каталоге
+    // Появление заднего фона у мобильных категорий при состоянии checked
+    
+    if(hiddenCategories) {
+        
+        let inputRadio = hiddenCategories.querySelectorAll(".input_radio");
+        document.addEventListener('click', (event) => {
+            
+            for(let i = 0; i < inputRadio.length; i++) {
+        
+                let categoryItem = hiddenCategories.querySelectorAll('.category_item');
+                let inputRadio = hiddenCategories.querySelectorAll('.input_radio');
+                let labels = hiddenCategories.querySelectorAll('label');
+                if(inputRadio[i].checked === true) {
+                    for(let i = 0; i < inputRadio.length; i++) {
+                        categoryItem[i].style.backgroundColor="rgba(2,2,2, 0)";
+                        labels[i].style.color="#ffffff";
+                    }
+                    categoryItem[i].style.backgroundColor="#ffffff";
+                    labels[i].style.color="#223038";
+                }
+            }
+
+        })
+        
+    }
+    // Конец появления заднего фона у мобильных категорий при состоянии checked
     
 });

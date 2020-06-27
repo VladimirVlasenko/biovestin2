@@ -657,3 +657,64 @@ line-height: 16px;
         line-height: 28px;
     }
 }
+/* Начало адаптации каталога */
+@media screen and (max-width:1024px) {
+    .catalog_main .wrapper .container .side_panel {
+        display: none;
+    }
+    .catalog_main .wrapper .categories_mobile {
+        display: block;
+    }
+}
+@media screen and (max-width: 800px) {
+    .catalog_main .wrapper .container .goods_wrapper .goods_item {
+        width: 45% !important;
+        height: 350px;
+        padding: 22px;
+    }
+    .catalog_main .wrapper .container .goods_wrapper .goods_item .card_image {
+        width: 112px;
+        display: block;
+        margin: 0 auto;
+    }
+    .catalog_main .wrapper .container .goods_wrapper .goods_item p {
+        display: block;
+        margin: 0;
+        text-align: left;
+    }
+    .catalog_main .wrapper .container .goods_wrapper .goods_item p.price {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: left;
+    }
+    .catalog_main .wrapper .container .goods_wrapper .goods_item .bottom {
+        flex-direction: column;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .catalog_main .wrapper .container .goods_wrapper .goods_item .bottom .quantity {
+        width: 120px;
+        border-radius: 19px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .catalog_main .wrapper .container .goods_wrapper .goods_item .bottom .quantity .plus,
+    .catalog_main .wrapper .container .goods_wrapper .goods_item .bottom .quantity .minus {
+        width: auto;
+    }
+    .catalog_main .wrapper .container .goods_wrapper .goods_item .bottom .toBasket {
+        width: 120px;
+        font-size: 16px;
+    }
+    .catalog_main .wrapper .container .goods_wrapper .goods_item .bottom .toBasket img {
+        display: none;
+    }
+    .catalog_main .wrapper .container .pags {
+        width: 320px;
+        right: 0;
+    }
+}
+/* Конец адаптации каталога */
