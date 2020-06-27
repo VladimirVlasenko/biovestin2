@@ -188,7 +188,7 @@ header .h_c_w .hidden_cart .header .order:hover {
 
 header .h_c_w .hidden_cart .hidden_cart_item {
     width: 100%;
-    height: 104px;
+    min-height: 104px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,7 +200,6 @@ header .h_c_w .hidden_cart .hidden_cart_item img {
 
 header .h_c_w .hidden_cart .hidden_cart_item .name {
     width: 199px;
-    height: 56px;
     display: block;
     font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
@@ -1367,7 +1366,8 @@ a:hover {
     margin: 0;
     color: #223038;
     display: block;
-    height: 33px;
+    min-height: 33px;
+    text-align: left;
 }
 .hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item p.name {
     margin-top: 32px;
@@ -2282,8 +2282,8 @@ a:hover {
 
 
 .functional_nutrition .wrapper .container .items_wrapper .item .img {
-    width: 86px;
-    height:86px;
+    width: 96px;
+    height:96px;
     position: relative;
     display: flex;
     align-items: center;
@@ -2302,18 +2302,18 @@ a:hover {
     cursor: pointer;
 }
 .functional_nutrition .wrapper .container .items_wrapper .item .img.second {
-    background: url('../Images/functional_nutrition/Immunity1.svg') no-repeat center center;
+    background: url('../Images/functional_nutrition/Stress1.svg') no-repeat center center;
 }
 .functional_nutrition .wrapper .container .items_wrapper .item .img.second:hover {
-    background: url('../Images/functional_nutrition/Immunity2.svg') no-repeat center center;
+    background: url('../Images/functional_nutrition/Stress2.svg') no-repeat center center;
     cursor: pointer;
 }
 
 .functional_nutrition .wrapper .container .items_wrapper .item .img.third {
-    background: url('../Images/functional_nutrition/Stress1.svg') no-repeat center center;
+    background: url('../Images/functional_nutrition/Immunity1.svg') no-repeat center center;
 }
 .functional_nutrition .wrapper .container .items_wrapper .item .img.third:hover {
-    background: url('../Images/functional_nutrition/Stress2.svg') no-repeat center center;
+    background: url('../Images/functional_nutrition/Immunity2.svg') no-repeat center center;
     cursor: pointer;
 }
 
