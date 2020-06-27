@@ -105,6 +105,17 @@
     .feedback .wrapper .container .feedback_slider_wrapper .slider_item {
         width: 100% !important;
     }
+    .feedback .wrapper .container .feedback_slider_wrapper .slick-prev,
+    .feedback .wrapper .container .feedback_slider_wrapper .slick-next {
+        display: none;
+    }
+    .feedback .wrapper .container .slick-dots li button:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #00AB8E;
+        border-radius: 50%;
+    }
 
 }
 @media screen and (max-width: 1024px) {
@@ -473,23 +484,13 @@ line-height: 16px;
     .functional_nutrition .wrapper .container img.big {
         width: 80%;
     }
-    .functional_nutrition .wrapper .container .items_wrapper .item .img {
-        width: 82px;
-        height: 82px;
+    .functional_nutrition .wrapper .container .items_wrapper {
+        min-height: 360px;
     }
-    .functional_nutrition .wrapper .container .items_wrapper .item .img.first {
-        background: url('../Images/functional_nutrition/Intestine1_small.svg') no-repeat center center;
+    .functional_nutrition .wrapper .container .items_wrapper .item .img {
+        transform: scale(0.7);
     }
 
-    .functional_nutrition .wrapper .container .items_wrapper .item .img.second {
-        background: url('../Images/functional_nutrition/Immunity1_small.svg') no-repeat center center;
-    }
-    .functional_nutrition .wrapper .container .items_wrapper .item .img.third {
-        background: url('../Images/functional_nutrition/Stress1_small.svg') no-repeat center center;
-    }
-    .functional_nutrition .wrapper .container .items_wrapper .item .img.fourth {
-        background: url('../Images/functional_nutrition/Toxins1_small.svg') no-repeat center center;
-    }
 
     .regular_intake .wrapper {
         padding-top: 0;
@@ -608,15 +609,13 @@ line-height: 16px;
     .feedback .wrapper .container .slick-prev {
         display: none !important;
     }
-    .feedback .wrapper .container .slick-dots li button:before {
-        content: '';
-        width: 12px;
-        height: 12px;
-        background-color: #00AB8E;
-        border-radius: 50%;
-    }
+
     .feedback .wrapper .container .feedback_slider_wrapper .slider_item {
         margin: 0;
+    }
+    .feedback .wrapper .container .read_all_feedback {
+        margin-bottom: 100px;
+        font-size: 16px;
     }
     .hotline .wrapper {
         padding-top: 0;
@@ -653,7 +652,7 @@ line-height: 16px;
 }
 @media screen and (max-width:346px) {
     .functional_nutrition .wrapper .buy_functional_nutrition {
-        width:80%;
+        width:90%;
         font-size: 16px;
         line-height: 28px;
     }

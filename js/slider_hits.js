@@ -1,4 +1,6 @@
-$('.hits_slider_wrapper').slick({
+let hitsSliderWrapper = document.querySelector('.hits_slider_wrapper');
+if(hitsSliderWrapper) {
+  $('.hits_slider_wrapper').slick({
     dots: false,
     infinite: true,
     speed: 300,
@@ -15,7 +17,6 @@ $('.hits_slider_wrapper').slick({
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
           autoplay: true,
           autoplaySpeed: 5000
         }
@@ -35,6 +36,8 @@ $('.hits_slider_wrapper').slick({
       // instead of a settings object
     ]
   });
+}
+
   let feedbackSliderWrapper = document.querySelector('.feedback_slider_wrapper');
   if(feedbackSliderWrapper) {
     $('.feedback_slider_wrapper').slick({
@@ -54,7 +57,7 @@ $('.hits_slider_wrapper').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            dots: false,
+            dots: true,
             autoplay: true,
             autoplaySpeed: 3000,
             pauseOnHover: true
@@ -63,6 +66,8 @@ $('.hits_slider_wrapper').slick({
         {
           breakpoint: 600,
           settings: {
+            dots: true,
+            infinite: true,
             slidesToShow: 2,
             slidesToScroll: 1
           }

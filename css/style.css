@@ -1381,6 +1381,7 @@ a:hover {
     line-height: 32px;
     color: #223038;
     margin-top: 0px;
+    text-align: left;
 }
 
 .hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .bottom {
@@ -2340,7 +2341,9 @@ a:hover {
 
 
 .functional_nutrition .wrapper .buy_functional_nutrition {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     margin-top: 38px;
     width: 416px;
@@ -2352,7 +2355,6 @@ a:hover {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 56px;
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 3px 10px rgba(24, 47, 68, 0.3);
@@ -2365,7 +2367,7 @@ a:hover {
 }
 
 .feedback {
-    min-height: 991px;
+    
     background: url('../Images/feedback/feedback_bg.png') no-repeat center center;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -2428,12 +2430,11 @@ a:hover {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, #FFFFFF 100%);
     border-radius: 5px;
     position: relative;
-    display: flex;
+    display: block !important;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 0 auto;
     padding: 36px 32px 26px 32px;
     box-sizing: border-box;
 }
@@ -3062,15 +3063,19 @@ footer .bottom .bottom_wrapper .aliance {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    padding: 31px 55px 25px 54px;
+    padding: 14px 16px;
     box-sizing: border-box;
     margin-bottom: 17px;
 }
 
 .catalog_main .wrapper .container .side_panel .side_categories .category_item {
     position: relative;
-    display: block;
-
+    display: flex;
+    align-items: center;
+    width: 248px;
+    min-height: 52px;
+    padding-left: 48px;
+    box-sizing: border-box;
 
 }
 
@@ -3101,7 +3106,7 @@ footer .bottom .bottom_wrapper .aliance {
     height: 20px;
     left: -30px;
     top: 2px;
-    background: url('../Images/Catalog/radio_unchecked.png') no-repeat center center;
+    background: url('../Images/Catalog/radio.png') no-repeat center center;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     box-sizing: border-box;
@@ -3115,14 +3120,18 @@ footer .bottom .bottom_wrapper .aliance {
     height: 20px;
     left: -30px;
     top: 2px;
-    background: url('../Images/Catalog/radio.png') no-repeat center center;
+    background: url('../Images/Catalog/radio_unchecked.png') no-repeat center center;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px 2px #FFFFFF;
 }
+.catalog_main .wrapper .container .side_panel .side_categories input[type="radio"]:checked  .catalog_main .wrapper .container .side_panel .side_categories .category_item {
+    background-color: #ffffff;
+}
 
 .catalog_main .wrapper .container .side_panel .side_categories label {
+
     font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -3130,6 +3139,7 @@ footer .bottom .bottom_wrapper .aliance {
     line-height: 26px;
     color: #FFFFFF;
     position: relative;
+    
 }
 
 .catalog_main .wrapper .container .side_panel .subscribe_side_panel {
