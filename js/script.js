@@ -234,5 +234,65 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
     document.addEventListener('scroll', showHamburger);
     document.addEventListener('click', toggleMenu);
+
+    // Переключение заднего фона для категори айтемс в каталоге
+    let sideCategories = document.querySelector('.side_categories');
+    
+    if(sideCategories) {
+        
+        let inputRadio = sideCategories.querySelectorAll(".input_radio");
+        document.addEventListener('click', (event) => {
+            
+            for(let i = 0; i < inputRadio.length; i++) {
+        
+                let categoryItem = document.querySelectorAll('.category_item');
+                let inputRadio = sideCategories.querySelectorAll('.input_radio');
+                let labels = sideCategories.querySelectorAll('label');
+                if(inputRadio[i].checked === true) {
+                    for(let i = 0; i < inputRadio.length; i++) {
+                        categoryItem[i].style.backgroundColor="rgba(2,2,2, 0)";
+                        labels[i].style.color="#ffffff";
+                    }
+                    categoryItem[i].style.backgroundColor="#ffffff";
+                    labels[i].style.color="#223038";
+                }
+            }
+
+        })
+        
+    }
+    // Плюс и минус в каталоге - карточке товара
+    let goodsWrapper = document.querySelector('.goods_wrapper');
+    let goodsWrapperPlusMinus = function(event) {
+        let plus = goodsWrapper.querySelectorAll('.plus');
+        let minus = goodsWrapper.querySelectorAll('.minus');
+        let itemsNumber = goodsWrapper.querySelectorAll('.itemsNumber');
+        if(event.target.classList.contains('plus')) {
+            for(let i=0; i<plus.length; i++) {
+                if(event.target === plus[i]) {
+                    if(itemsNumber[i].textContent  < 1000) {
+                        itemsNumber[i].textContent++;
+                    } else {
+                        itemsNumber[i] = 1000;
+                    }
+                }
+            }
+        }
+        if(event.target.classList.contains('minus')) {
+            for(let i = 0; i<minus.length; i++) {
+                if(event.target === minus[i]) {
+                    if(itemsNumber[i].textContent > 0) {
+                        itemsNumber[i].textContent--;
+                    } else {
+                        itemsNumber[i] = 1;
+                    }
+                }
+            }
+        }
+  
+    }
+    if(goodsWrapper) {
+        document.addEventListener('click', goodsWrapperPlusMinus)
+    }
     
 });
