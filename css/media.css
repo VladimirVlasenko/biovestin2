@@ -511,6 +511,8 @@ line-height: 16px;
     .hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item {
         height: 350px;
         padding: 22px;
+        border: 1px solid rgba(219, 236, 240, 0.7);
+        border-radius: 0;
     }
     .hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .card_image {
         width: 112px;
@@ -717,4 +719,13 @@ line-height: 16px;
         right: 0;
     }
 }
+@media screen and (max-width: 580px) {
+    .catalog_main .wrapper .container .goods_wrapper .goods_item {
+        margin: 0 auto;
+        width: 50% !important;
+        border-radius: 0;
+        border: 1px solid rgba(219, 236, 240, 0.7);
+    }
+}
+
 /* Конец адаптации каталога */

@@ -235,32 +235,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     document.addEventListener('scroll', showHamburger);
     document.addEventListener('click', toggleMenu);
 
-    // Переключение заднего фона для категори айтемс в каталоге
-    let sideCategories = document.querySelector('.side_categories');
     
-    if(sideCategories) {
-        
-        let inputRadio = sideCategories.querySelectorAll(".input_radio");
-        document.addEventListener('click', (event) => {
-            
-            for(let i = 0; i < inputRadio.length; i++) {
-        
-                let categoryItem = document.querySelectorAll('.category_item');
-                let inputRadio = sideCategories.querySelectorAll('.input_radio');
-                let labels = sideCategories.querySelectorAll('label');
-                if(inputRadio[i].checked === true) {
-                    for(let i = 0; i < inputRadio.length; i++) {
-                        categoryItem[i].style.backgroundColor="rgba(2,2,2, 0)";
-                        labels[i].style.color="#ffffff";
-                    }
-                    categoryItem[i].style.backgroundColor="#ffffff";
-                    labels[i].style.color="#223038";
-                }
-            }
-
-        })
-        
-    }
     // Плюс и минус в каталоге - карточке товара
     let goodsWrapper = document.querySelector('.goods_wrapper');
     let goodsWrapperPlusMinus = function(event) {
@@ -294,8 +269,36 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if(goodsWrapper) {
         document.addEventListener('click', goodsWrapperPlusMinus)
     }
+    // Переключение заднего фона для категори айтемс в каталоге
+    document.addEventListener('click', ()=>{
+        let sideCategories = document.querySelector('.side_categories');
+    
+    if(sideCategories) {
+        
+        let inputRadio = sideCategories.querySelectorAll(".input_radio");
+        document.addEventListener('click', (event) => {
+            
+            for(let i = 0; i < inputRadio.length; i++) {
+        
+                let categoryItem = sideCategories.querySelectorAll('.category_item');
+                let inputRadio = sideCategories.querySelectorAll('.input_radio');
+                let labels = sideCategories.querySelectorAll('label');
+                if(inputRadio[i].checked === true) {
+                    for(let i = 0; i < inputRadio.length; i++) {
+                        categoryItem[i].style.backgroundColor="rgba(2,2,2, 0)";
+                        labels[i].style.color="#ffffff";
+                    }
+                    categoryItem[i].style.backgroundColor="#ffffff";
+                    labels[i].style.color="#223038";
+                }
+            }
 
+        })
+    }
+    })
+    
     // Появление скрытых категорий в каталоге
+
     let mobileCategories = document.querySelector('.categories_mobile');
     let hiddenCategories = document.querySelector('.categories_hidden');
     
@@ -313,6 +316,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 mobileCategoriesArrow.textContent="⌄";
                 mobileCategoriesArrow.style.top="5px";
             }
+            if( window.innerWidth >= 1024 ){
+                hiddenCategories.classList.remove('visible');
+           }
         })
     }
     // конец появления скрытых категорий в каталоге

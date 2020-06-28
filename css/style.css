@@ -543,7 +543,6 @@ header .bottom_info .bottom_info_wrapper .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 header .bottom_info .bottom_info_wrapper .city_selector {
@@ -2980,6 +2979,7 @@ footer .bottom .bottom_wrapper .aliance {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    z-index: -1;
 }
 
 .catalog_main {
@@ -2995,7 +2995,7 @@ footer .bottom .bottom_wrapper .aliance {
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    z-index: -1;
+    z-index: -2;
 }
 
 .catalog_main .wrapper {
@@ -3099,7 +3099,7 @@ footer .bottom .bottom_wrapper .aliance {
     position: absolute;
     width: 20px;
     height: 20px;
-    left: -30px;
+    left: 10px;
     top: 2px;
 
 }
@@ -3134,7 +3134,7 @@ footer .bottom .bottom_wrapper .aliance {
 
 
 .catalog_main .wrapper .container .side_panel .side_categories label {
-
+    width: 100%;
     font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -3142,7 +3142,10 @@ footer .bottom .bottom_wrapper .aliance {
     line-height: 26px;
     color: #FFFFFF;
     position: relative;
-    
+}
+
+.catalog_main .wrapper .container .side_panel .side_categories label:hover {
+    cursor: pointer;
 }
 
 .catalog_main .wrapper .container .side_panel .subscribe_side_panel {
@@ -3649,15 +3652,18 @@ footer .bottom .bottom_wrapper .aliance {
 
 }
 .catalog_main .wrapper .categories_hidden .category_item label {
+    width: 100%;
     display: block;
     font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
     color: #FFFFFF;
     position: relative;    
+    cursor:pointer;
 }
+
 
 .catalog_main .wrapper .categories_hidden .category_item label span {
     content: '';
