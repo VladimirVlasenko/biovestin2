@@ -24,7 +24,7 @@
 
     position: absolute;
     top: 50%;
-
+    border: 3px solid #E6F2F5;
     display: block;
 
     width: 48px;
@@ -35,9 +35,8 @@
     transform: translate(0, -50%);
 
     cursor: pointer;
-
+    z-index: 1;
     color: transparent;
-    border: none;
     outline: none;
     background: transparent;
     background-color: #ffffff;
@@ -81,7 +80,7 @@
 .slick-prev
 {
     left: -66px;
-    background: #ffffff url('../Images/Hits/ArrowLeft.png') no-repeat center center;
+    background: rgba(169, 179, 179, 0.1) url('../Images/Main/Arrow_prev.svg') no-repeat center center;
     border-radius: 50%;
 
 }
@@ -101,7 +100,7 @@
 
 .slick-next
 {
-    background: #ffffff url('../Images/Hits/ArrowRight.png') no-repeat center center;
+    background: rgba(169, 179, 179, 0.1) url('../Images/Main/Arrow_next.svg') no-repeat center center;
     border-radius: 50%;
     right: -66px;
 }

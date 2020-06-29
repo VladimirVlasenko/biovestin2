@@ -348,5 +348,38 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
     }
     // Конец появления заднего фона у мобильных категорий при состоянии checked
+        // Плюс и минус в карточке товара
+        let cardMain = document.querySelector('.card_main');
+        let cardMainPlusMinus = function(event) {
+            let plus = cardMain.querySelectorAll('.plus');
+            let minus = cardMain.querySelectorAll('.minus');
+            let itemsNumber = cardMain.querySelectorAll('.itemsNumber');
+            if(event.target.classList.contains('plus')) {
+                for(let i=0; i<plus.length; i++) {
+                    if(event.target === plus[i]) {
+                        if(itemsNumber[i].textContent  < 1000) {
+                            itemsNumber[i].textContent++;
+                        } else {
+                            itemsNumber[i] = 1000;
+                        }
+                    }
+                }
+            }
+            if(event.target.classList.contains('minus')) {
+                for(let i = 0; i<minus.length; i++) {
+                    if(event.target === minus[i]) {
+                        if(itemsNumber[i].textContent > 0) {
+                            itemsNumber[i].textContent--;
+                        } else {
+                            itemsNumber[i] = 1;
+                        }
+                    }
+                }
+            }
+      
+        }
+        if(cardMain) {
+            document.addEventListener('click', cardMainPlusMinus)
+        }
     
 });

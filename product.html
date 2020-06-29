@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bio_catalog</title>
+    <title>Bio_card</title>
     <link rel="stylesheet" href="./css/fm.revealator.jquery.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
@@ -58,15 +58,8 @@
             </div>
             <div class="hidden_footer">
                 <div class="social_icons">
-                    <a href="#">
-                        <img src="./Images/Header/Instagram_icon.png" class="instagram" alt="instagram">
-                        <p class="our insta">Наш Instagram</p>
-                    </a>
-                    
-                    <a href="#">
-                        <img src="./Images/Header/VK_icon.png" class="vk" alt="vkontakte">
-                        <p class="our vkontakte">Наш Вконтакте</p>
-                    </a>
+                    <img src="./Images/Header/Instagram_white_icon.png" alt="insta">
+                    <img src="./Images/Header/vk_white_icon.png" alt="vk">
                 </div>
                 <img src="./Images/Header/Aliance_white.png" alt="Alianse+" class="aliance">
             </div>
@@ -182,15 +175,8 @@
                     <p class="city">г. Новосибирск,<br> ул. Лесосечная, 3/1</p>
                 </div>
                 <div class="social_icons">
-                    <a href="#">
-                        <img src="./Images/Header/Instagram_icon.png" class="instagram" alt="instagram">
-                        <p class="our insta">Наш Instagram</p>
-                    </a>
-                    
-                    <a href="#">
-                        <img src="./Images/Header/VK_icon.png" class="vk" alt="vkontakte">
-                        <p class="our vkontakte">Наш Вконтакте</p>
-                    </a>
+                    <a href="#"><img src="./Images/Header/Instagram_icon.png" alt="instagram"></a>
+                    <a href="#"><img src="./Images/Header/VK_icon.png" alt="vkontakte"></a>
                 </div>
                 <div class="callback">
                     <div class="descr">
@@ -223,343 +209,60 @@
             </svg>
         </div>
     </header>
-    <div class="catalog_main">
+    <section class="card_main">
         <div class="background"></div>
         <div class="wrapper">
-            <div class="breadcrumbs">Главная / Каталог товаров </div>
-            <div class="header">Каталог товаров</div>
-            <div class="categories_mobile">
-                <div class="category_item">
-                    <div class="arrow">⌄</div>
-                    <input type="radio" id="category1_mobile" name="category_mobile" value="allgoods"
-                        class="input_radio" checked>
-                    <label for="category1_mobile"><span></span>Все товары</label>
-
-                </div>
-            </div>
-            <div class="categories_hidden">
-                <div class="category_item">
-
-                    <input type="radio" id="category1_hidden" name="category_hidden" value="allgoods"
-                        class="input_radio">
-                    <label for="category1_hidden"><span></span>Все товары</label>
-
-                </div>
-                <hr>
-                <div class="category_item">
-                    <input type="radio" id="category2_hidden" name="category_hidden" value="babyfood"
-                        class="input_radio">
-                    <label for="category2_hidden"><span></span>Детское питание</label>
-                </div>
-                <hr>
-                <div class="category_item">
-                    <input type="radio" id="category3_hidden" name="category_hidden" value="probiotics"
-                        class="input_radio">
-                    <label for="category3_hidden"><span></span>Пробиотики серии Биовестин</label>
-                </div>
-                <hr>
-                <div class="category_item">
-                    <input type="radio" id="category4_hidden" name="category_hidden" value="functional_nutrition"
-                        class="input_radio">
-                    <label for="category4_hidden"><span></span>Функциональное питание</label>
-                </div>
-            </div>
+            <div class="breadcrumbs">Главная  /  Каталог товаров  /  Функциональные напитки /  Тонус питьевой «Яблоко-Груша», 200 гр.  </div>
+            <div class="header">Тонус питьевой «Яблоко-Груша», 200 гр.</div>
             <div class="container">
-                <div class="side_panel">
-                    <div class="side_categories">
-                        <div class="category_item">
-
-                            <input type="radio" id="category1" name="category" value="allgoods" class="input_radio">
-                            <label for="category1"><span></span>Все товары</label>
-
+                <div class="left">
+                    <div class="card_slider_wrapper">
+                        <div class="card_image_wrapper">
+                            <div class="sales">Акция</div>
+                            <img src="./Images/card/tonus_card_image.png" alt="photo1">
                         </div>
-                        <hr>
-                        <div class="category_item">
-                            <input type="radio" id="category2" name="category" value="babyfood" class="input_radio">
-                            <label for="category2"><span></span>Детское питание</label>
+                        <div class="card_image_wrapper">
+                            <div class="sales">Акция</div>
+                            <img src="./Images/card/tonus_card_image.png" alt="photo2">
                         </div>
-                        <hr>
-                        <div class="category_item">
-                            <input type="radio" id="category3" name="category" value="probiotics" class="input_radio">
-                            <label for="category3"><span></span>Пробиотики серии Биовестин</label>
-                        </div>
-                        <hr>
-                        <div class="category_item">
-                            <input type="radio" id="category4" name="category" value="functional_nutrition"
-                                class="input_radio">
-                            <label for="category4"><span></span>Функциональное питание</label>
+                        <div class="card_image_wrapper">
+                            <div class="sales">Акция</div>
+                            <img src="./Images/card/tonus_card_image.png" alt="photo3">
                         </div>
                     </div>
-                    <form class="subscribe_side_panel">
-                        <div class="text">Подпишитесь<br> на новости<br> об акциях<br> и скидках!</div>
-                        <input type="email" name="email" id="email_side_panel" placeholder="Ваш e-mail">
-                        <input type="submit" value="Подписаться ›">
-                    </form>
-                    <div class="marks">
-                        <div class="mark hit">Хит</div>
-                        <div class="mark natural">100% натурально</div>
-                        <div class="mark sales">Акции</div>
-                        <div class="mark new">Новинки</div>
+                    <div class="use">
+                        <div class="use_item">Выводит токсины</div>
+                        <div class="use_item">Уменьшенает нагрузки на печень</div>
+                        <div class="use_item">Нормализирует гормональный фон</div>
+                        <div class="use_item">Нормализирует стул</div>
+                        <div class="use_item">Нормализирует пищеварение</div>
+                    </div>
+                    <div class="certificate">
+                        <a href="#">Свидетельство о государственной регистрации</a>
                     </div>
                 </div>
-                <div class="goods_wrapper">
-                    <div class="goods_item">
-                        <div class="hit">Хит</div>
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/slider_img_1.png" alt="1image">
-                            <p class="name">Биовестин, 12 мл,</p>
-                            <p class="descr">28 шт в упаковке</p>
-                            <p class="price">2500 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
+                <div class="right">
+                    <p class="buy">Купить «Тонус питьевой «Яблоко-Груша»</p>
+                    <div class="p_q">
+                        <div class="price">
+                            <div class="now">300 ₽</div>
+                            <div class="earlier">349 ₽</div>
+                        </div>
+                        <div class="quantity">
+                            <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
+                            <p class='itemsNumber'>1</p>
+                            <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
                         </div>
                     </div>
-                    <div class="goods_item">
-                        <div class="natural">100% натурально</div>
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/biovestin_a.png"
-                                alt="biovestin_a">
-                            <p class="name">Биовестин-A,</p>
-                            <p class="descr">250 мл</p>
-                            <p class="price">2500 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
+                    <div class="toBasket">
+                        <img src="./Images/card/Cart_icon.png" alt="cart_icon">
+                        В корзину
                     </div>
-                    <div class="goods_item">
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/slider_img_2.png" alt="1image">
-                            <p class="name">Биовестин-Лакто,</p>
-                            <p class="descr">12 мл, 7 шт в упаковке</p>
-                            <p class="price">300 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="goods_item">
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/biovestin_a.png"
-                                alt="biovestin_a">
-                            <p class="name">Биовестин-A,</p>
-                            <p class="descr">250 мл</p>
-                            <p class="price">2500 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="goods_item">
-                        <div class="sales">Акция</div>
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/tonus_apple.png"
-                                alt="biovestin_a">
-                            <p class="name">Тонус питьевой</p>
-                            <p class="descr">"Яблоко-Груша", 200 гр.</p>
-                            <p class="price">70 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="goods_item">
-                        <div class="new">Новинки</div>
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/tonus_sweet.png"
-                                alt="biovestin_a">
-                            <p class="name">Тонус питьевой сладкий,</p>
-                            <p class="descr">250 гр.</p>
-                            <p class="price">70 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="goods_item">
-                        <div class="hit">Хит</div>
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/slider_img_1.png" alt="1image">
-                            <p class="name">Биовестин, 12 мл,</p>
-                            <p class="descr">28 шт в упаковке</p>
-                            <p class="price">2500 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="goods_item">
-                        <div class="natural">100% натурально</div>
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/biovestin_a.png"
-                                alt="biovestin_a">
-                            <p class="name">Биовестин-A,</p>
-                            <p class="descr">250 мл</p>
-                            <p class="price">2500 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="goods_item">
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/slider_img_2.png" alt="1image">
-                            <p class="name">Биовестин-Лакто,</p>
-                            <p class="descr">12 мл, 7 шт в упаковке</p>
-                            <p class="price">300 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="goods_item">
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/biovestin_a.png"
-                                alt="biovestin_a">
-                            <p class="name">Биовестин-A,</p>
-                            <p class="descr">250 мл</p>
-                            <p class="price">2500 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="goods_item">
-                        <div class="sales">Акция</div>
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/tonus_apple.png"
-                                alt="biovestin_a">
-                            <p class="name">Тонус питьевой</p>
-                            <p class="descr">"Яблоко-Груша", 200 гр.</p>
-                            <p class="price">70 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="goods_item">
-                        <div class="new">Новинки</div>
-                        <a href="#">
-                            <img class="card_image" src="./Images/Catalog/goodsimages/tonus_sweet.png" alt="biovestin_a">
-                            <p class="name">Тонус питьевой сладкий,</p>
-                            <p class="descr">250 гр.</p>
-                            <p class="price">70 ₽</p>
-                        </a>
-                        <div class="bottom">
-                            <div class="quantity">
-                                <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
-                                <p class='itemsNumber'>1</p>
-                                <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
-                            </div>
-                            <a href="#" class="toBasket">
-                                <img src="./Images/Hits/Cart_button_icon.png" alt="cart">
-                                <p>В корзину</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pags">
-                    <div class="pag_item"><<</div>
-                    <div class="pag_item"><</div>
-                    <div class="pag_item">1</div>
-                    <div class="pag_item">2</div>
-                    <div class="pag_item">3</div>
-                    <div class="pag_item">...</div>
-                    <div class="pag_item">></div>
-                    <div class="pag_item">>></div>
                 </div>
             </div>
+         
         </div>
-    </div>
+    </section>
     <section class="hits" id="hits">
         <div class="wrapper">
             <div class="header revealator-fade revealator-once">Хиты продаж</div>
@@ -774,15 +477,8 @@
         <div class="bottom">
             <div class="bottom_wrapper">
                 <div class="social_icons">
-                    <a href="#">
-                        <img src="./Images/Header/Instagram_icon.png" class="instagram" alt="instagram">
-                        <p class="our insta">Наш Instagram</p>
-                    </a>
-                    
-                    <a href="#">
-                        <img src="./Images/Header/VK_icon.png" class="vk" alt="vkontakte">
-                        <p class="our vkontakte">Наш Вконтакте</p>
-                    </a>
+                    <a href="#"><img src="./Images/Header/Instagram_icon.png" alt="instagram"></a>
+                    <a href="#"><img src="./Images/Header/VK_icon.png" alt="vkontakte"></a>
                 </div>
                 <a href="#" class="subscribe">Подписатся на e-mail рассылку</a>
                 <div class="search_input">
@@ -793,7 +489,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/slick.js"></script>
+    <script src="./js/slick.js"></script>
     <script src="./js/slider_hits.js"></script>
     <script src="./js/script.js"></script>
 </body>
