@@ -152,3 +152,42 @@ if (regularSliderWrapper) {
       ]
     });
   }
+  // Слайдер кросселлов в карточке товаров
+  let crossellSliderWrapper = document.querySelector('.crossell_slider_wrapper');
+if (crossellSliderWrapper) {
+  $('.crossell_slider_wrapper').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 5000
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          rows: 2,
+          slidesPerRow: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+}

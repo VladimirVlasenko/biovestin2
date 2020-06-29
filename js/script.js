@@ -348,7 +348,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
     }
     // Конец появления заднего фона у мобильных категорий при состоянии checked
-        // Плюс и минус в карточке товара
+    // Плюс и минус в карточке товара
         let cardMain = document.querySelector('.card_main');
         let cardMainPlusMinus = function(event) {
             let plus = cardMain.querySelectorAll('.plus');
@@ -381,5 +381,60 @@ document.addEventListener('DOMContentLoaded', ()=>{
         if(cardMain) {
             document.addEventListener('click', cardMainPlusMinus)
         }
-    
+    // Плюс и минус в карточке товара в слайдере Кросселл
+    let crossell = document.querySelector('.crossell');
+    let crossellCardPlusMinus = function(event) {
+        let plus = crossell.querySelectorAll('.plus');
+        let minus = crossell.querySelectorAll('.minus');
+        let itemsNumber = crossell.querySelectorAll('.itemsNumber');
+        if(event.target.classList.contains('plus')) {
+            for(let i=0; i<plus.length; i++) {
+                if(event.target === plus[i]) {
+                    if(itemsNumber[i].textContent  < 1000) {
+                        itemsNumber[i].textContent++;
+                    } else {
+                        itemsNumber[i] = 1000;
+                    }
+                }
+            }
+        }
+        if(event.target.classList.contains('minus')) {
+            for(let i = 0; i<minus.length; i++) {
+                if(event.target === minus[i]) {
+                    if(itemsNumber[i].textContent > 0) {
+                        itemsNumber[i].textContent--;
+                    } else {
+                        itemsNumber[i] = 1;
+                    }
+                }
+            }
+        }
+  
+    }
+    if(crossell) {
+        document.addEventListener('click', crossellCardPlusMinus)
+    }
+        // табы свойств товара в карточке товара
+
+        let cardTabsToggle = function(event) {
+            let tabs = cardMain.querySelectorAll('.tab');
+            let tabsContent =  cardMain.querySelectorAll('.tab_content');
+            
+            if(event.target.classList.contains('tab')) {
+                for(i=0; i<tabs.length; i++) {
+                    if(tabs[i].classList.contains('active')){
+                        tabs[i].classList.remove('active');
+                        tabsContent[i].classList.remove('active');
+                    }
+                    if(event.target === tabs[i]) {
+                        tabs[i].classList.add('active');
+                        tabsContent[i].classList.add('active');
+                    }
+                }
+            }
+            
+        }
+        if(cardMain) {
+            document.addEventListener('click', cardTabsToggle);
+        }
 });
