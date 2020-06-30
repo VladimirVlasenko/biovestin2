@@ -2994,6 +2994,7 @@ footer .bottom .bottom_wrapper .aliance {
     -o-background-size: cover;
     background-size: cover;
     z-index: -1;
+    box-shadow: inset 0 -20px 20px 0 white;
 }
 
 .catalog_main {
@@ -3742,6 +3743,39 @@ footer .bottom .bottom_wrapper .aliance {
     color: #333D4D;
     margin-bottom: 50px;
 }
+.card_main .wrapper .back_to_catalog {
+    display: none;
+    width: 154.4px;
+    height: 24px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #ECF7FA 100%);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 23px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    justify-content: center;
+    color: #223038;
+    padding-left: 20px;
+    padding-right: 10px;
+    position: relative;
+    margin-bottom: 23px;
+    margin-left: 24px;
+}
+.card_main .wrapper .back_to_catalog:hover {
+    cursor: pointer;
+}
+.card_main .wrapper .back_to_catalog::before {
+    content:'❮';
+    width: 4px;
+    height: 6px;
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    color: #00D1B3;
+}
 
 .card_main .wrapper .header {
     font-family: 'Roboto Slab', sans-serif;
@@ -3839,6 +3873,7 @@ footer .bottom .bottom_wrapper .aliance {
     box-sizing: border-box;
     margin-bottom: 16px;
 }
+
 .card_main .wrapper .container .left .use .use_item {
     font-style: normal;
     font-weight: normal;
@@ -3849,6 +3884,44 @@ footer .bottom .bottom_wrapper .aliance {
     
 }
 .card_main .wrapper .container .left .use .use_item::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 11px;
+    left: -34px;
+    top: 4px;
+    background: url('../Images/card/OK_use_item.png') no-repeat center center;
+}
+/* Use в правой части продукта */
+.card_main .wrapper .container .right .use {
+    width: 384px;
+    height: 168px;
+    border: 3px solid #DEEAED;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 56px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+.card_main .wrapper .container .right .use.mobile {
+    display: none;
+}
+.card_main .wrapper .container .right .use .use_item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #223038;
+    position: relative;
+    
+}
+.card_main .wrapper .container .right .use .use_item::before {
     content: '';
     position: absolute;
     width: 14px;
@@ -3889,6 +3962,39 @@ footer .bottom .bottom_wrapper .aliance {
     left: -30px;
     top: 5px;
 }
+/* Certificate_mobile */
+.card_main .wrapper .container .right .certificate.mobile {
+    width: 384px;
+    height: 96px;
+    background: #E5F1F5;
+    border: 3px solid #D3E7EE;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 5px #C8E6F0;
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 60px 23px 72px;
+}
+.card_main .wrapper .container .right .certificate.mobile a {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #223038;
+    position: relative;
+}
+.card_main .wrapper .container .right .certificate.mobile a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 27px;
+    background: url('../Images/card/Certificate.png') no-repeat center center;
+    left: -30px;
+    top: 5px;
+}
 .card_main .wrapper .container .right {
     display: flex;
     flex-direction: column;
@@ -3904,6 +4010,7 @@ footer .bottom .bottom_wrapper .aliance {
     font-size: 18px;
     line-height: 24px;
     color: #223038;
+    margin-top: 54px;
 }
 .card_main .wrapper .container .right .p_q {
     display: flex;
@@ -4025,6 +4132,18 @@ footer .bottom .bottom_wrapper .aliance {
     font-size: 14px;
     line-height: 21px;
     color: #223038;
+    position: relative;
+}
+.card_main .wrapper .container .right .props .line {
+    position: relative;
+    width: 2px;
+    height: 24px;
+    right: -30px;
+    top: -2px;
+    border: none;
+    background: #D3E7EE;
+    margin-right: 50px;
+
 }
 .card_main .wrapper .container .right .props .item span {
     font-weight: normal;
@@ -4130,7 +4249,7 @@ display: none;
 }
 
 .crossell .wrapper .crossell_slider .crossell_slider_wrapper {
-    width: 1200px;
+    width: 100%;
     height: 424px;
     position: relative;
 }
@@ -4293,4 +4412,101 @@ display: none;
     color: #FFFFFF;
     text-shadow: 0px 3px 10px rgba(24, 47, 68, 0.3);
 }
+.crossell .wrapper .crossell_slider .slick-dots li button:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 45%;
+    opacity: 1;
+}
+.crossell .wrapper .crossell_slider .slick-dots {
+    bottom: -45px;
+}
+.crossell .wrapper .crossell_slider .slick-dots li.slick-active button:before {
+    background-color: #00AB8E;
+}
 /* Конец С этим товаром также покупают */
+/* Скрытые в селект табы */
+.card_main .wrapper .container .right .select {
+    position: relative;
+    width: 100%;
+}
+.card_main .wrapper .container .right .select .product_tabs_hidden {
+    display: block;
+    width: 272px;
+    height: 48px;
+    background: linear-gradient(180deg, #00D1B3 0%, #00AB8E 100%);
+    border: none;
+    border-radius: 24px;
+    box-sizing: border-box;
+    border-radius: 29px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    text-align: left;
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;/* убираем дефолнтные стрелочки */
+    position: relative;
+}
+
+
+.card_main .wrapper .container .right .select::after {
+    content:'';
+    display: block;
+    position: absolute;
+    background: url('../Images/card/Arrow_for_select.png') no-repeat center center;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    margin-top: -3px;
+    color: #ffffff;
+}
+.card_main .wrapper .container .right .select .product_tabs_hidden::after {
+    content: '';
+    background: url('../Images/card/Arrow_for_select.png') no-repeat center center;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.card_main .wrapper .container .right .product_tabs_hidden .tab {
+    border: 3px solid #DEEAED;
+    box-sizing: border-box;
+    min-width: 303px;
+    height: 40px;
+    border-radius: 45px;
+    line-height: 34px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #223038;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.card_main .wrapper .container .right .product_tabs_hidden .tab:hover {
+    box-shadow: 0px 0px 2px 4px #DEEAED;
+}
+
+.card_main .wrapper .container .right .product_tabs_hidden .tab.active {
+    color: #DF5309;
+    border: 3px solid #DF5309;
+}
+/* Конец скрытых в селект табов */

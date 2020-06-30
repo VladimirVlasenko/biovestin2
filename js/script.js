@@ -437,4 +437,31 @@ document.addEventListener('DOMContentLoaded', ()=>{
         if(cardMain) {
             document.addEventListener('click', cardTabsToggle);
         }
+    // МОбильные табы в карточке товара 
+    let tabsProductMobile = document.querySelector('.product_tabs_hidden')
+    let productMobileTabsToggle = function(event) {
+        let tabs = tabsProductMobile.options;
+        
+        let tabsContent =  cardMain.querySelectorAll('.tab_content');
+        
+        if(event.target.classList.contains('product_tabs_hidden')) {
+            for(i=0; i<tabs.length; i++) {
+                if(tabs[i].classList.contains('active')){
+                    tabs[i].classList.remove('active');
+                    tabsContent[i].classList.remove('active');
+                }
+
+            }
+            for(i=0; i<tabs.length; i++) {
+                if(tabs[i] === tabs[tabs.selectedIndex]) {
+                    tabs[i].classList.add('active');
+                    tabsContent[i].classList.add('active');
+                }
+            }
+        }
+        
+    }
+    if(tabsProductMobile) {
+        tabsProductMobile.addEventListener('change', productMobileTabsToggle);
+    }
 });

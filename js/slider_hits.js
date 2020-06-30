@@ -172,17 +172,19 @@ if (crossellSliderWrapper) {
           slidesToScroll: 1,
           infinite: true,
           autoplay: true,
-          autoplaySpeed: 5000
+          autoplaySpeed: 5000,
+          dots: true
         }
       },
       {
         breakpoint: 800,
         settings: {
           arrows: false,
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          rows: 2,
-          slidesPerRow: 1
+          rows: 1,
+          slidesPerRow: 1,
+          dots: true
         }
       }
       // You can unslick at a given breakpoint now by adding:

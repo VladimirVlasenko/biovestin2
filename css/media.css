@@ -729,3 +729,213 @@ line-height: 16px;
 }
 
 /* Конец адаптации каталога */
+/* НАчало адаптации карточки товара */
+@media screen and (max-width:1200px) {
+    .card_main .wrapper .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1024px) {
+    .card_main .wrapper .container {
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width:800px) {
+    .card_main .wrapper .container .right .props {
+        flex-direction: column;
+        height: 160px;
+        align-items: flex-start;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .card_main .wrapper .container .right .tabs {
+        display: none;
+    }
+    .card_main .wrapper .container .right .product_tabs_hidden {
+        display: block;
+    }
+    .card_main .wrapper .container .left .certificate {
+        display: none;
+    }
+    .card_main .wrapper .container .right .certificate.mobile {
+        display: flex;
+    }
+    .card_main .wrapper .container .right .buy {
+        display: none;
+    }
+    .card_main .wrapper .container .right {
+        width: 100%;
+    }
+    .card_main .wrapper .container .right .props .line {
+        height: 2px;
+        width: 100%;
+        margin-right: 0;
+        left: 0;
+    }
+    .card_main .wrapper .container .right .tabs_content {
+        width: 100%;
+        height: auto;
+    }
+    .card_main .wrapper .container .right .tabs_content {
+        white-space: pre-line;
+        width: 100%;
+        height: auto;
+    }
+}
+/* Конец адаптации карточки товара */
+@media screen and (max-width: 580px) {
+    .card_main .wrapper .breadcrumbs {
+        display: none;
+    }
+    .card_main .wrapper .back_to_catalog {
+        display: flex;
+    }
+    .card_main .wrapper .header {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .card_main .wrapper .header::before {
+        display: none;
+    }
+    .card_main .wrapper .container .left {
+        width: 100%;
+    }
+    .card_main .wrapper .container .left .card_slider_wrapper {
+        width: 100%;
+    }
+
+    .card_main .wrapper .container .left .use {
+        display: none;
+    }
+    .card_main .wrapper .container .right .use.mobile {
+        display: flex;
+        width: 100%;
+    }
+    .card_main .wrapper .container .right .certificate.mobile {
+        width: 100%;
+    }
+    .card_main .wrapper .container .left .card_slider_wrapper .slick-next {
+        background: url('../Images/card/Arrow_right_mobile.svg') no-repeat center center;
+        border: none;
+    }
+    .card_main .wrapper .container .left .card_slider_wrapper .slick-prev {
+        background: url('../Images/card/Arrow_left_mobile.svg') no-repeat center center;
+        border: none;
+    }
+    .card_main .wrapper .container .left .card_slider_wrapper img {
+        width: 178px;
+    }
+    .card_main .wrapper .container .right {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    .crossell {
+        padding-bottom: 10px;
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper {
+        height: auto;
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item {
+        height: 350px;
+        padding: 16px 24px;
+        border-radius: 3px;
+        width: 240px !important;
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item p.name {
+        margin-top: 16px;
+    }
+
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item .card_image {
+        width: 192px;
+        display: block;
+        margin: 0 auto;
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item p {
+        display: block;
+        margin: 0;
+        text-align: left;
+        font-size: 14px;
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item .bottom {
+        width: 240px;
+        align-items: flex-end;
+        padding-right: 27px;
+        box-sizing: border-box;
+
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item p.price {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: left;
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item .bottom {
+        flex-direction: column;
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item .bottom .quantity {
+        width: 120px;
+        border-radius: 19px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item .bottom .quantity .plus,
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item .bottom .quantity .minus {
+        width: auto;
+    }
+    .card_main .wrapper .container .right .toBasket {
+        width: 100%;
+        font-size: 24px;
+        text-transform: none;
+        box-sizing: border-box;
+    }
+    .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item .bottom .toBasket {
+        width: 192px;
+    }
+    .card_main .wrapper .container .right .select .product_tabs_hidden {
+        width: 100%;
+        text-align: center;
+    }
+    .card_main .wrapper .container .right .use {
+        height: auto;
+    }
+    .card_main .wrapper .container .right .p_q {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .card_main .wrapper .container .right .p_q .quantity {
+        border: 2px solid #DEEAED;
+        border-radius: 16px;
+        width: 120px;
+        height: 32px;
+    }
+    .card_main .wrapper .container .right .p_q .price {
+        margin: 0;
+    }
+    .card_main .wrapper .container .right .p_q .price .now {
+        font-size: 22px;
+        margin: 0;
+        margin-right: 20px;
+    }
+    .card_main .wrapper .container .left .card_slider_wrapper .card_image_wrapper .sales {
+        width: 80px;
+        height: 24px;
+        font-size: 14px;
+    }
+
+    .card_main .wrapper .container .right .p_q .price .earlier {
+        font-size: 22px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 321px) {
+    .catalog_top_bg {
+        background: url('../Images/card/Main_bg_mobile.png') no-repeat center center;
+    }
+}
