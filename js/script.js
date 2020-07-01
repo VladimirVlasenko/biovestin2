@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             if(event.target.classList.contains('main-menu_catalog') && !mainMenuCatalog.classList.contains('clicked')) {
                 subMenuCatalog.classList.add('clicked');
                 subMenu.style.display='flex';
-                console.log('asdf1');
             }
         })
         document.addEventListener('mouseover', (event)=>{

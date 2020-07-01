@@ -299,6 +299,77 @@ header .h_c_w .hidden_cart .clear_cart:hover {
     cursor: pointer;
 }
 
+/* Скрытое сабменю */
+header .h_c_w .sub-menu li a.sub-menu_catalog {
+    color: #DF5309;
+}
+
+header .h_c_w li .arrow_default {
+    background: url('../Images/Header/Arrow_default.png') no-repeat center center;
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -15px;
+    top: 8px;
+}
+
+header .h_c_w .sub-menu li a.sub-menu_catalog .arrow {
+    background: url('../Images/Header/Arrow_clicked.png') no-repeat center center;
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -15px;
+    top: 8px;
+}
+
+
+header .h_c_w .sub-menu {
+    padding: 0;
+    margin: 0;
+    padding-top: 4px;
+    padding-left: 23px;
+    padding-right: 15px;
+    margin-left: 0;
+    display: none;
+    position: absolute;
+    width: 191px;
+    height: 224px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #ECF7FA 100%);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 10px rgba(24, 47, 68, 0.3);
+    border-radius: 0px 0px 5px 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    z-index: 2;
+    list-style: none;
+}
+header .h_c_w  .sub-menu:hover {
+    cursor: pointer;
+}
+
+header .h_c_w .sub-menu li a {
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #223038;
+}
+header .h_c_w .sub-menu li a:hover {
+    cursor: pointer;
+    color: #DF5309;
+}
+
+/* Скрытое сабменю */
 header .top-menu {
     width: 100%;
     margin: 0 auto;
