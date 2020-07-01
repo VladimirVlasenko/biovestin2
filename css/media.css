@@ -13,6 +13,9 @@
     }
 }
 @media screen and (max-width:1200px) {
+    .index_background {
+        height: 1580px;
+    }
     header .bottom_info .bottom_info_wrapper .callback {
         margin-left: 0;
     }
@@ -119,6 +122,9 @@
 
 }
 @media screen and (max-width: 1024px) {
+    .index_background {
+        height: 1480px;
+    }
     header {
         display: none;
     }
@@ -253,6 +259,9 @@
 
 }
 @media screen and (max-width:800px) {
+    .index_background {
+        height: 1380px;
+    }
     .main .main_slider {
         min-height: 480px;
     }
@@ -420,6 +429,9 @@ line-height: 16px;
 
 }
 @media screen and (max-width:580px) {
+    .index_background {
+        height: 1180px;
+    }
     .regular_intake .wrapper .plusses_hidden .plusses_item {
         height: 152px;
         position: relative;
