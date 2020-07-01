@@ -754,7 +754,7 @@ line-height: 16px;
     .card_main .wrapper .container .right .tabs {
         display: none;
     }
-    .card_main .wrapper .container .right .product_tabs_hidden {
+    .card_main .wrapper .container .right .select .product_tabs_hidden {
         display: block;
     }
     .card_main .wrapper .container .left .certificate {
@@ -890,10 +890,11 @@ line-height: 16px;
         width: auto;
     }
     .card_main .wrapper .container .right .toBasket {
-        width: 100%;
+        width: 220px;
         font-size: 24px;
         text-transform: none;
         box-sizing: border-box;
+        font-size: 16px;
     }
     .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item .bottom .toBasket {
         width: 192px;

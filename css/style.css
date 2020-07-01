@@ -615,6 +615,9 @@ header .bottom_info .bottom_info_wrapper .logo {
     justify-content: space-between;
     align-items: center;
 }
+header .bottom_info .bottom_info_wrapper .logo:hover {
+    cursor: pointer;
+}
 
 header .bottom_info .bottom_info_wrapper .city_selector {
     width: 164px;
@@ -4458,7 +4461,7 @@ display: none;
     align-items: center;
     margin: 0;
     padding-left: 4px;
-    padding-right: 4px;
+    padding-right: 18px;
 }
 
 .crossell .wrapper .crossell_slider .crossell_slider_wrapper .crossell_slider_item .bottom .toBasket:hover {
@@ -4504,7 +4507,7 @@ display: none;
     width: 100%;
 }
 .card_main .wrapper .container .right .select .product_tabs_hidden {
-    display: block;
+    display: none;
     width: 272px;
     height: 48px;
     background: linear-gradient(180deg, #00D1B3 0%, #00AB8E 100%);
