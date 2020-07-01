@@ -464,4 +464,37 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if(tabsProductMobile) {
         tabsProductMobile.addEventListener('change', productMobileTabsToggle);
     }
+    // Плюс и минус в корзине товаров
+    let cart = document.querySelector('.cart');
+    let cartCardPlusMinus = function(event) {
+        let plus = cart.querySelectorAll('.plus');
+        let minus = cart.querySelectorAll('.minus');
+        let itemsNumber = cart.querySelectorAll('.itemsNumber');
+        if(event.target.classList.contains('plus')) {
+            for(let i=0; i<plus.length; i++) {
+                if(event.target === plus[i]) {
+                    if(itemsNumber[i].textContent  < 1000) {
+                        itemsNumber[i].textContent++;
+                    } else {
+                        itemsNumber[i] = 1000;
+                    }
+                }
+            }
+        }
+        if(event.target.classList.contains('minus')) {
+            for(let i = 0; i<minus.length; i++) {
+                if(event.target === minus[i]) {
+                    if(itemsNumber[i].textContent > 0) {
+                        itemsNumber[i].textContent--;
+                    } else {
+                        itemsNumber[i] = 1;
+                    }
+                }
+            }
+        }
+  
+    }
+    if(cart) {
+        document.addEventListener('click', cartCardPlusMinus)
+    }
 });
