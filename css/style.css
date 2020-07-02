@@ -1458,9 +1458,19 @@ a:hover {
     background: #E9F6FA;
 }
 
-.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .hit {
-    display: block;
+.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .good_mark {
+    display: flex;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .good_mark .hit {
+    display: block;
+    position: relative;
     width: 45px;
     height: 23px;
     left: 16px;
@@ -1473,6 +1483,66 @@ a:hover {
     line-height: 23px;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .good_mark .natural {
+    display: block;
+    position: relative;
+    width: 122px;
+    height: 23px;
+    left: 16px;
+    top: 0px;
+    background: #B5BF6E;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .good_mark .sales {
+    display: block;
+    position: relative;
+    width: 59px;
+    height: 23px;
+    left: 16px;
+    top: 0px;
+    background: #F5A3B7;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item .good_mark .new {
+    display: block;
+    position: relative;
+    width: 82px;
+    height: 23px;
+    left: 16px;
+    top: 0px;
+    background: #7CBDC9;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+
 }
 
 .hits .wrapper .hits_slider .hits_slider_wrapper .hits_slider_item p.name,
@@ -3225,55 +3295,61 @@ footer .bottom .bottom_wrapper .aliance {
     position: relative;
     display: flex;
     align-items: center;
-    width: 248px;
-    min-height: 52px;
-    padding-left: 48px;
+    width: 248px !important;
+    height: 52px;
+    padding-left: 64px;
     box-sizing: border-box;
     border-radius: 5px;
-}
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    position: relative;
 
+}
 
 .catalog_main .wrapper .container .side_panel .side_categories hr {
-    width: 280px;
+    width: 260px;
     height: 4px;
     border: none;
-    background: url('../Images/Catalog/Divider_categories.png') no-repeat center center;
-    transform: translateX(-24px);
+    background: url(../Images/Catalog/Divider_categories.png) no-repeat center center;
+    
 }
 
-.catalog_main .wrapper .container .side_panel .side_categories input {
-    display: block;
-    opacity: 0;
-    content: '';
+
+.catalog_main .wrapper .container .side_panel .side_categories .category_item span {
+    
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 10px;
-    top: 2px;
-
-}
-
-.catalog_main .wrapper .container .side_panel .side_categories label span {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: -30px;
-    top: 2px;
+    left: 18px;
+    top: 14px;
     background: url('../Images/Catalog/radio.png') no-repeat center center;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px #FFFFFF;
+
 }
 
-.catalog_main .wrapper .container .side_panel .side_categories input[type="radio"]:checked+label span {
-    content: '';
+.catalog_main .wrapper .container .side_panel .side_categories .category_item:hover {
+    text-decoration: underline;
+}
+.catalog_main .wrapper .container .side_panel .side_categories .category_item:active {
+    background-color: #ffffff;
+    color: #223038;
+    text-decoration: none;
+}
+
+
+.catalog_main .wrapper .container .side_panel .side_categories .category_item:active span {
     position: absolute;
     width: 20px;
     height: 20px;
-    left: -30px;
-    top: 2px;
+    left: 18px;
+    top: 14px;
     background: url('../Images/Catalog/radio_unchecked.png') no-repeat center center;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
@@ -3281,24 +3357,7 @@ footer .bottom .bottom_wrapper .aliance {
     box-shadow: 0px 0px 5px 2px #FFFFFF;
 }
 
-
-.catalog_main .wrapper .container .side_panel .side_categories label {
-    width: 100%;
-    font-family: 'Roboto Slab', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-    color: #FFFFFF;
-    position: relative;
-}
-.catalog_main .wrapper .container .side_panel .side_categories label a {
-    color: #ffffff;
-}
-
-.catalog_main .wrapper .container .side_panel .side_categories label:hover {
-    cursor: pointer;
-}
+/* Конец скрытых категорий */
 
 .catalog_main .wrapper .container .side_panel .subscribe_side_panel {
     width: 280px;
@@ -3484,9 +3543,20 @@ footer .bottom .bottom_wrapper .aliance {
     background: #E9F6FA;
 }
 
+
+.catalog_main .wrapper .container .goods_wrapper .goods_item .good_mark {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 .catalog_main .wrapper .container .goods_wrapper .goods_item .hit {
     display: block;
-    position: absolute;
+    position: relative;
     width: 45px;
     height: 23px;
     left: 16px;
@@ -3499,11 +3569,13 @@ footer .bottom .bottom_wrapper .aliance {
     line-height: 23px;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 .catalog_main .wrapper .container .goods_wrapper .goods_item .natural {
     display: block;
-    position: absolute;
+    position: relative;
     width: 122px;
     height: 23px;
     left: 16px;
@@ -3516,11 +3588,13 @@ footer .bottom .bottom_wrapper .aliance {
     line-height: 23px;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 .catalog_main .wrapper .container .goods_wrapper .goods_item .sales {
     display: block;
-    position: absolute;
+    position: relative;
     width: 59px;
     height: 23px;
     left: 16px;
@@ -3533,11 +3607,13 @@ footer .bottom .bottom_wrapper .aliance {
     line-height: 23px;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 .catalog_main .wrapper .container .goods_wrapper .goods_item .new {
     display: block;
-    position: absolute;
+    position: relative;
     width: 82px;
     height: 23px;
     left: 16px;
@@ -3550,6 +3626,9 @@ footer .bottom .bottom_wrapper .aliance {
     line-height: 23px;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+
 }
 
 .catalog_main .wrapper .container .goods_wrapper .goods_item p.name,
@@ -3810,32 +3889,6 @@ footer .bottom .bottom_wrapper .aliance {
     box-sizing: border-box;
     border-radius: 19px;
     margin-left: 10px;
-
-}
-
-.catalog_main .wrapper .categories_hidden hr {
-    width: 280px;
-    height: 4px;
-    border: none;
-    background: url(../Images/Catalog/Divider_categories.png) no-repeat center center;
-    transform: translateX(-24px);
-}
-
-.catalog_main .wrapper .categories_hidden .category_item input {
-    display: block;
-    opacity: 0;
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 10px;
-    top: 5px;
-
-}
-
-.catalog_main .wrapper .categories_hidden .category_item label {
-    width: 100%;
-    display: block;
     font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -3843,20 +3896,28 @@ footer .bottom .bottom_wrapper .aliance {
     line-height: 20px;
     color: #FFFFFF;
     position: relative;
-    cursor: pointer;
+
 }
-.catalog_main .wrapper .categories_hidden .category_item label a {
-    color: #ffffff;
+
+.catalog_main .wrapper .categories_hidden hr {
+    width: 260px;
+    height: 4px;
+    border: none;
+    background: url(../Images/Catalog/Divider_categories.png) no-repeat center center;
+    
 }
 
 
-.catalog_main .wrapper .categories_hidden .category_item label span {
+
+
+
+.catalog_main .wrapper .categories_hidden .category_item span {
     content: '';
     position: absolute;
     width: 20px;
     height: 20px;
-    left: -30px;
-    top: 0px;
+    left: 18px;
+    top: 9px;
     background: url('../Images/Catalog/radio.png') no-repeat center center;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
@@ -3865,13 +3926,22 @@ footer .bottom .bottom_wrapper .aliance {
 
 }
 
-.catalog_main .wrapper .categories_hidden .category_item input[type="radio"]:checked+label span {
+.catalog_main .wrapper .categories_hidden .category_item:hover {
+    text-decoration: underline;
+}
+.catalog_main .wrapper .categories_hidden .category_item:active {
+    background-color: #ffffff;
+    color: #223038;
+    text-decoration: none;
+}
+
+.catalog_main .wrapper .categories_hidden .category_item:active span {
     content: '';
     position: absolute;
     width: 20px;
     height: 20px;
-    left: -30px;
-    top: 0px;
+    left: 18px;
+    top: 9px;
     background: url('../Images/Catalog/radio_unchecked.png') no-repeat center center;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
@@ -3997,7 +4067,97 @@ footer .bottom .bottom_wrapper .aliance {
     position: relative;
     margin-bottom: 40px;
 }
+/* Метки на товаре */
+.card_main .wrapper .container .left .card_slider_wrapper .card_image_wrapper {
+    position: relative;
+}
+.card_main .wrapper .container .left .card_slider_wrapper .card_image_wrapper .good_mark {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card_main .wrapper .container .left .card_slider_wrapper .card_image_wrapper .good_mark .hit {
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 23px;
+    left: 16px;
+    top: 0px;
+    background: #F5A883;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
 
+.card_main .wrapper .container .left .card_slider_wrapper .card_image_wrapper .good_mark .natural {
+    display: block;
+    position: relative;
+    width: 122px;
+    height: 23px;
+    left: 16px;
+    top: 0px;
+    background: #B5BF6E;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.card_main .wrapper .container .left .card_slider_wrapper .card_image_wrapper .good_mark .sales {
+    display: block;
+    position: relative;
+    width: 59px;
+    height: 23px;
+    left: 16px;
+    top: 0px;
+    background: #F5A3B7;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.card_main .wrapper .container .left .card_slider_wrapper .card_image_wrapper .good_mark .new {
+    display: block;
+    position: relative;
+    width: 82px;
+    height: 23px;
+    left: 16px;
+    top: 0px;
+    background: #7CBDC9;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+
+}
+/* Конец меток на товаре */
 .card_main .wrapper .container .left .card_slider_wrapper .slick-prev {
     left: 0;
 }

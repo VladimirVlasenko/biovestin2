@@ -269,32 +269,35 @@ document.addEventListener('DOMContentLoaded', ()=>{
         document.addEventListener('click', goodsWrapperPlusMinus)
     }
     // Переключение заднего фона для категори айтемс в каталоге
-    document.addEventListener('click', ()=>{
-        let sideCategories = document.querySelector('.side_categories');
+    // document.addEventListener('click', ()=>{
+    //     let sideCategories = document.querySelector('.side_categories');
     
-    if(sideCategories) {
+    // if(sideCategories) {
         
-        let inputRadio = sideCategories.querySelectorAll(".input_radio");
-        document.addEventListener('click', (event) => {
+    //     let inputRadio = sideCategories.querySelectorAll(".input_radio");
+    //     document.addEventListener('click', (event) => {
             
-            for(let i = 0; i < inputRadio.length; i++) {
+    //         for(let i = 0; i < inputRadio.length; i++) {
         
-                let categoryItem = sideCategories.querySelectorAll('.category_item');
-                let inputRadio = sideCategories.querySelectorAll('.input_radio');
-                let labels = sideCategories.querySelectorAll('label');
-                if(inputRadio[i].checked === true) {
-                    for(let i = 0; i < inputRadio.length; i++) {
-                        categoryItem[i].style.backgroundColor="rgba(2,2,2, 0)";
-                        labels[i].style.color="#ffffff";
-                    }
-                    categoryItem[i].style.backgroundColor="#ffffff";
-                    labels[i].style.color="#223038";
-                }
-            }
+    //             let categoryItem = sideCategories.querySelectorAll('.category_item');
+    //             let inputRadio = sideCategories.querySelectorAll('.input_radio');
+    //             let labels = sideCategories.querySelectorAll('label');
+    //             let refs = sideCategories.querySelectorAll('.ref');
+    //             if(inputRadio[i].checked === true) {
+    //                 for(let i = 0; i < inputRadio.length; i++) {
+    //                     categoryItem[i].style.backgroundColor="rgba(2,2,2, 0)";
+    //                     labels[i].style.color="#ffffff";
+    //                     refs[i].style.color="#ffffff";
+    //                 }
+    //                 categoryItem[i].style.backgroundColor="#ffffff";
+    //                 labels[i].style.color="#223038";
+    //                 refs[i].style.color="#223038";
+    //             }
+    //         }
 
-        })
-    }
-    })
+    //     })
+    // }
+    // })
     
     // Появление скрытых категорий в каталоге
 
@@ -323,29 +326,29 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // конец появления скрытых категорий в каталоге
     // Появление заднего фона у мобильных категорий при состоянии checked
     
-    if(hiddenCategories) {
+    // if(hiddenCategories) {
         
-        let inputRadio = hiddenCategories.querySelectorAll(".input_radio");
-        document.addEventListener('click', (event) => {
+    //     let inputRadio = hiddenCategories.querySelectorAll(".input_radio");
+    //     document.addEventListener('click', (event) => {
             
-            for(let i = 0; i < inputRadio.length; i++) {
+    //         for(let i = 0; i < inputRadio.length; i++) {
         
-                let categoryItem = hiddenCategories.querySelectorAll('.category_item');
-                let inputRadio = hiddenCategories.querySelectorAll('.input_radio');
-                let labels = hiddenCategories.querySelectorAll('label');
-                if(inputRadio[i].checked === true) {
-                    for(let i = 0; i < inputRadio.length; i++) {
-                        categoryItem[i].style.backgroundColor="rgba(2,2,2, 0)";
-                        labels[i].style.color="#ffffff";
-                    }
-                    categoryItem[i].style.backgroundColor="#ffffff";
-                    labels[i].style.color="#223038";
-                }
-            }
+    //             let categoryItem = hiddenCategories.querySelectorAll('.category_item');
+    //             let inputRadio = hiddenCategories.querySelectorAll('.input_radio');
+    //             let labels = hiddenCategories.querySelectorAll('label');
+    //             if(inputRadio[i].checked === true) {
+    //                 for(let i = 0; i < inputRadio.length; i++) {
+    //                     categoryItem[i].style.backgroundColor="rgba(2,2,2, 0)";
+    //                     labels[i].style.color="#ffffff";
+    //                 }
+    //                 categoryItem[i].style.backgroundColor="#ffffff";
+    //                 labels[i].style.color="#223038";
+    //             }
+    //         }
 
-        })
+    //     })
         
-    }
+    // }
     // Конец появления заднего фона у мобильных категорий при состоянии checked
     // Плюс и минус в карточке товара
         let cardMain = document.querySelector('.card_main');
