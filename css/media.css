@@ -1085,3 +1085,194 @@ line-height: 16px;
         margin-left: 0;
     }
 }
+/* Начало адаптации заказа */
+@media screen and (max-width:1120px) {
+    .order .wrapper .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .order .wrapper .container .left .main_order .notice_bottom {
+        margin-bottom: 30px;
+    }
+    .order .wrapper .container .left .main_order input[type="submit"] {
+        display: none;
+    }
+    .order .wrapper .container .submit2 {
+        display: block;
+    }
+    .order .wrapper .container .notice_bottom2 {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .order .wrapper .container .left .main_order .notice_bottom {
+        display: none;
+    }
+}
+@media screen and (max-width:730px) {
+    .order .wrapper .container .left {
+        width: 96%;
+    }
+    .order .wrapper .container .left .main_order .customer_info .number {
+        top: 6px;
+    }
+    .order .wrapper .container .left .main_order .customer_info .info_header {
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 32px;
+    }
+    .order .wrapper .container .left .main_order .payment .number {
+        top: 6px;
+    }
+    .order .wrapper .container .left .main_order .payment .payment_header {
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 32px;
+    }
+    .order .wrapper .container .left .main_order .delivery_info .number {
+        top: 6px;
+    }
+    .order .wrapper .container .left .main_order .delivery_info .delivery_header {
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 32px;
+    }
+    .order .wrapper .container .left .main_order .delivery_date .number {
+        top: 6px;
+    }
+    .order .wrapper .container .left .main_order .delivery_date .date_header {
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 32px;
+    }
+    .order .wrapper .container .left .main_order .payment label {
+        margin-bottom: 16px;
+    }
+    .order .wrapper .container .left .main_order .delivery_info input {
+        width: 100%;
+    }
+    .order .wrapper .container .left .main_order .delivery_info input:nth-child(2n-1) {
+        margin-right: 0;
+    }
+    .order .wrapper .container .left .main_order .delivery_date label {
+        margin-bottom: 16px;
+    }
+}
+@media screen and (max-width:580px) {
+    .order .wrapper .breadcrumbs {
+        display: none;
+    }
+    .order .wrapper .back_to_catalog {
+        display: flex;
+    }
+    .order .wrapper .header {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .order .wrapper .header::before {
+        display: none;
+    }
+    .order .wrapper .container .left .main_order .customer_info .info_header {
+        font-size: 16px;
+    }
+    .order .wrapper .container .left .main_order .customer_info input {
+        font-size: 14px;
+        height: 40px;
+    }
+    .order .wrapper .container .left .main_order .payment {
+        justify-content: center;
+    }
+    .order .wrapper .container .left .main_order .payment .payment_header {
+        font-size: 16px;
+    }
+    .order .wrapper .container .left .main_order .payment label {
+        font-size: 14px;
+        height: 56px;
+    }
+    .order .wrapper .container .left .main_order .delivery_info .delivery_header {
+        font-size: 16px;
+    }
+    .order .wrapper .container .left .main_order .delivery_date .date_header {
+        font-size: 16px;
+    }
+    .order .wrapper .container .left .main_order .delivery_date label {
+        height: 56px;
+        font-size: 14px;
+    }
+    .order .wrapper .container .right .top .top_header {
+        font-size: 16px;
+    }
+    .order .wrapper .container .right .top .change {
+        font-size: 14px;
+        color: #00D1B3;
+    }
+    .order .wrapper .container .right .order_item .item_image {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+    }
+    .order .wrapper .container .right .discount .name {
+        font-size: 16px;
+    }
+    .order .wrapper .container .right .discount .sum {
+        font-size: 16px;
+    }
+    .order .wrapper .container .right .final .name {
+        font-size: 16px;
+    }
+    .order .wrapper .container .right .final .sum {
+        font-size: 16px;
+    }
+    .order .wrapper .container .submit2 {
+        font-size: 16px;
+        width: 272px;
+        height: 48px;
+    }
+    .order .wrapper .container .left .main_order .delivery_date textarea {
+        width: 100%;
+    }
+    .order .wrapper .container .left .main_order .delivery_date {
+        align-items: center;
+        justify-content: center;
+    }
+    .order .wrapper .container .left .main_order .delivery_date .radio.two label {
+        margin-right: 0;
+    }
+    .order .wrapper .container .left .main_order .delivery_date .radio.one label {
+        margin-right: 0;
+    }
+    .order .wrapper .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .order .wrapper .container .left {
+        width: 100%;
+    }
+    .order .wrapper .container .right {
+        width: 100%;
+    }
+    .order .wrapper .container .right hr {
+        width: 90%;
+    }
+    .order .wrapper .container .right {
+        padding: 16px;
+    }
+    .order .wrapper .container .right .order_item {
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width:400px) {
+    .order .wrapper .container .right .order_item {
+        position: relative;
+        padding-bottom: 40px;
+    }
+    .order .wrapper .container .right .order_item .n_s {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        min-width: 110px;
+    }
+
+} 
