@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bio_card</title>
+    <link rel="stylesheet" href="./css/fm.revealator.jquery.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/fm.revealator.jquery.min.js"></script>
+
+
+    <link rel="shortcut icon" href="./Favicons/Favicon1.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="ham_twin"></div>
+    <div class="hidden_menu hidden">
+        <div class="menu_wrapper">
+            <div class="top">
+                <div class="login">
+                    <img src="./Images/Header/Sign_in_icon.png" alt="sign_in_icon">
+                    <p>Вход</p>
+                </div>
+                <div class="basket_wrapper">
+                    <div class="image">
+                        <img src="./Images/Header/Cart_icon.png" alt="cart" class="cart_icon">
+                        <p class="num_of_goods">3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden_categories">
+                <a href="#">Все товары</a>
+                <a href="#">Детское питание</a>
+                <a href="#">Пробиотики серии Биовестин</a>
+                <a href="#">Функциональное питание</a>
+            </div>
+            <div class="information">Информация</div>
+            <div class="info_wrapper">
+                <a class="info_item" href="#">Контакты</a>
+                <a class="info_item" href="#">Условия доставки и оплата</a>
+                <a class="info_item" href="#">О компании</a>
+                <a class="info_item" href="#">Отзывы</a>
+                <a class="info_item" href="#">Точки продаж</a>
+            </div>
+            <a class="help">Помощь покупателю</a>
+            <div class="search_input">
+                <img src="./Images/Header/Search_icon.png" alt="Search_icon">
+                <input type="text" class="search" placeholder="Поиск товаров">
+            </div>
+            <div class="hidden_footer">
+                <div class="social_icons">
+                    <img src="./Images/Header/Instagram_white_icon.png" alt="insta">
+                    <img src="./Images/Header/vk_white_icon.png" alt="vk">
+                </div>
+                <img src="./Images/Header/Aliance_white.png" alt="Alianse+" class="aliance">
+            </div>
+        </div>
+    </div>
+    <div class="catalog_top_bg"></div>
+    <header>
+        <div class="h_c_w">
+            <!-- скрытая корзина -->
+            <div class="hidden_cart">
+                <div class="bridge"></div>
+                <div class="header">
+                    <div class="number">В корзине 3 товара</div>
+                    <a href="#" class="order">Оформить заказ</a>
+                </div>
+                <div class="hidden_cart_item">
+                    <img src="./Images/Header/hidden_cart_image.png" alt="good">
+                    <div class="name">
+                        Тонус питьевой «Яблоко-Груша», 200 гр
+                    </div>
+                    <div class="quantity">
+                        <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
+                        <p class='itemsNumber'>1</p>
+                        <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
+                    </div>
+                    <div class="price">
+                        <div class="earlier">144 ₽</div>
+                        <div class="now">120 ₽</div>
+                    </div>
+                    <img src="./Images/Header/hidden_cart_delete.png" alt="delete" class="delete">
+                </div>
+                <hr>
+                <div class="hidden_cart_item">
+                    <img src="./Images/Header/hidden_cart_image.png" alt="good">
+                    <div class="name">
+                        Тонус питьевой «Яблоко-Груша», 200 гр
+                    </div>
+                    <div class="quantity">
+                        <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
+                        <p class='itemsNumber'>1</p>
+                        <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
+                    </div>
+                    <div class="price">
+                        <div class="earlier">144 ₽</div>
+                        <div class="now">120 ₽</div>
+                    </div>
+                    <img src="./Images/Header/hidden_cart_delete.png" alt="delete" class="delete">
+                </div>
+                <hr>
+                <div class="hidden_cart_item">
+                    <img src="./Images/Header/hidden_cart_image.png" alt="good">
+                    <div class="name">
+                        Тонус питьевой «Яблоко-Груша», 200 гр
+                    </div>
+                    <div class="quantity">
+                        <div src="./Images/Hits/minus.png" alt="minus" class='img minus'></div>
+                        <p class='itemsNumber'>1</p>
+                        <div src="./Images/Hits/plus.png" alt="plus" class='img plus'></div>
+                    </div>
+                    <div class="price">
+                        <div class="earlier">144 ₽</div>
+                        <div class="now">120 ₽</div>
+                    </div>
+                    <img src="./Images/Header/hidden_cart_delete.png" alt="delete" class="delete">
+                </div>
+                <div class="clear_cart">Очистить корзину</div>
+            </div>
+            <!-- конец скрытой корзины -->
+                        <!-- Скрытое сабменю -->
+                        <ul class="sub-menu">
+                            <li><a href="#" class="sub-menu_catalog">Каталог товаров<div class="arrow"></div></a></li>
+                            <li><a href="#">Детское питание</a></li>
+                            <li><a href="#">Пробиотики серии Биовестин</a></li>
+                            <li><a href="#">Функциональное питание</a></li>
+                        </ul>
+                        <!-- Конец скрытого сабменю  -->
+        </div>
+        <div class="top-menu">
+            <div class="top-menu_wrapper">
+                <ul class="main-menu">
+                    <li>
+                        <a href="#" class="main-menu_catalog">Каталог товаров<div class="arrow_default"></div></a>
+                        <!-- <ul class="sub-menu">
+                            <li><a href="#" class="sub-menu_catalog">Каталог товаров<div class="arrow"></div></a></li>
+                            <li><a href="#">Детское питание</a></li>
+                            <li><a href="#">Пробиотики серии Биовестин</a></li>
+                            <li><a href="#">Функциональное питание</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a href="#">Условия доставки и оплата</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+                <div class="search_input">
+                    <img src="./Images/Header/Search_icon.png" alt="Search_icon">
+                    <input type="text" class="search" placeholder="Поиск товаров">
+                </div>
+                <div class="basket_wrapper">
+                    <div class="image">
+                        <img src="./Images/Header/Cart_icon.png" alt="cart" class="cart_icon">
+                        <p class="num_of_goods">3</p>
+                    </div>
+                    <p class="sum">300 ₽</p>
+                </div>
+                <div class="login">
+                    <img src="./Images/Header/Sign_in_icon.png" alt="sign_in_icon">
+                    <p>Вход</p>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+        <div class="bottom_info">
+            <div class="bottom_info_wrapper">
+                <a href="index.html" class="logo">
+                    <img src="./Images/Header/bio-vesta_logo.png" alt="logo">
+                </a>
+                <div class="city_selector">
+                    <img src="./Images/Header/Location_icon.png" alt="location">
+                    <p class="city">г. Новосибирск,<br> ул. Лесосечная, 3/1</p>
+                </div>
+                <div class="social_icons">
+                    <a href="#"><img src="./Images/Header/Instagram_icon.png" alt="instagram"></a>
+                    <a href="#"><img src="./Images/Header/VK_icon.png" alt="vkontakte"></a>
+                </div>
+                <div class="callback">
+                    <div class="descr">
+                        <p class="first">Диспетчер, с 09:00 до 19:00</p>
+                        <p class="second">8 (383) 292-59-37</p>
+                    </div>
+                    <a href="#" class="callback_button">
+                        Перезвоните мне
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="hidden">
+        <a href="index.html" class="logo">
+            <img src="./Images/Header/bio-vesta_logo.png" alt="logo">
+        </a>
+        <div class="basket_wrapper">
+            <img src="./Images/Header/Cart_icon.png" alt="cart" class="cart_icon">
+            <p class="num_of_goods">3</p>
+        </div>
+
+        <div class="burg_wrapper">
+            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" height="80">
+                <path class="line top"
+                    d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                <path class="line middle" d="m 70,50 h -40" />
+                <path class="line bottom"
+                    d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+            </svg>
+        </div>
+    </header>
+    <section class="order" id="order">
+        <div class="background"></div>
+        <div class="wrapper">
+            <div class="breadcrumbs">Главная  /  Корзина / Оформление заказа</div>
+            <a class="back_to_catalog">Назад в каталог</a>
+            <div class="header">Оформление заказа</div>
+            <div class="container">
+                <div class="left">
+                    <form action="#" method="post" class="main_order" id="main_order">
+                        <div class="customer_info">
+                            <div class="number">1</div>
+                            <div class="info_header">Данные получателя</div>
+                            <input type="text" id="name" name="name" placeholder="Имя*" required>
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                            <input type="tel" id="phone" name="phone"
+                            pattern="+7 ([0-9]{3}([0-9]{3})([0-9]{2})([0-9]{2})" placeholder="Номер телефона"
+                            required>
+                        </div>
+                        <div class="payment">
+                            <div class="number">2</div>
+                            <div class="payment_header">Данные получателя</div>
+                            
+                            <div class="radio1">
+                                <input type="radio" name="payment" id="courier" value="courier">
+                                <label for="courier">Курьеру наличными или картой</label>
+                            </div>
+                            <div class="radio2">
+                                <input type="radio" name="payment" id="online" value="online">
+                                <label for="online">Картой на сайте</label>
+                            </div>
+                        </div>
+                        <div class="delivery_info">
+                            <div class="number">3</div>
+                            <div class="delivery_header">Информация для доставки</div>
+                            <div class="notice">
+                                <div class="attention">!</div>
+                                <div class="text">Доставка в черте города, включая Бердск, Академгородок, Кольцово, Краснообск кроме Родников, Снегирей, Пашино и Толмачёво. <a href="#">Смотреть на карте</a>.</div>
+                            </div>
+                            <div class="select">
+                                <select name="address" id="address_select" class="choose_address" form="main_order">
+                                    <option value="">Выберите сохраненный адрес</option>
+                                    <option value="">Первый сохраненный адрес</option>
+                                    <option value="">Второй сохраненный адрес</option>
+                                </select>
+                            </div>
+                            <input type="text" name="district" placeholder="Район города">
+                            <input type="text" name="street" placeholder="Улица*" >
+                            <input type="text" name="house" placeholder="Дом*" >
+                            <input type="text" name="building" placeholder="Корпус/строение" >
+                            <input type="text" name="flat_office" placeholder="Картира/офис" >
+                            <input type="text" name="entrance" placeholder="Подъезд" >
+                            <input type="text" name="floor" placeholder="Этаж" >
+                        </div>
+                        <div class="delivery_date">
+                            <div class="number">4</div>
+                            <div class="date_header">Выберите день доставки</div>
+                            <div class="radio one">
+                                <input type="radio" name="delivery_day" id="first_day" value="first_day">
+                                <label for="first_day">Вторник, 10 июня</label>
+                            </div>
+                            <div class="radio two">
+                                <input type="radio" name="delivery_day" id="second_day" value="second_day">
+                                <label for="second_day">Четверг, 12 июня</label>
+                            </div>
+                            <div class="radio three">
+                                <input type="radio" name="delivery_day" id="third_day" value="third_day">
+                                <label for="third_day">Суббота, 14 июня</label>
+                            </div>
+                            <textarea name="comments" id="" placeholder="Комментарий к заказу"></textarea>
+                        </div>
+                        <input type="submit" value="Подтвердить заказ">
+                        <div class="notice_bottom">
+                            *Нажимая кнопку «Оформить заказ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в <a href="">Согласии на обработку персональных данных</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <div class="top_header">Ваш заказ</div>
+                        <div class="change">Изменить</div>
+                    </div>
+                    <div class="order_item">
+                        <img src="./Images/order/Biovestin_a_icon.png" alt="biovestin_a_icon" class="item_image">
+                        <div class="name">Продукт кисломолочный обезжиренный Биовестин А, 250 мл</div>
+                        <div class="n_s">
+                            <div class="number">1 шт</div>
+                            <div class="sum">120 ₽</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="order_item">
+                        <img src="./Images/order/Tonus_drink_icon.png" alt="tonus_drink_icon" class="item_image">
+                        <div class="name">Тонус питьевой «Яблоко-Груша», 200 гр.</div>
+                        <div class="n_s">
+                            <div class="number">2 шт</div>
+                            <div class="sum">448 ₽</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="order_item">
+                        <img src="./Images/order/Tonus_drink_icon.png" alt="tonus_drink_icon" class="item_image">
+                        <div class="name">Биовестин-Лакто, 12 мл, 7 шт в упаковке</div>
+                        <div class="n_s">
+                            <div class="number">1 шт</div>
+                            <div class="sum">310 ₽</div>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <div class="name">Скидка</div>
+                        <div class="sum">120 ₽</div>
+                    </div>
+                    <div class="final">
+                        <div class="name">Сумма заказа</div>
+                        <div class="sum">848 ₽</div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="top">
+                <a href="index.html" class="logo">
+                    <img src="./Images/Header/bio-vesta_logo.png" alt="logo">
+                </a>
+                <div class="info column revealator-fade revealator-once revealator-duration10">
+                    <div class="header">Информация</div>
+                    <a href="#">Условия доставки и оплата</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Точки продаж</a>
+                </div>
+                <div class="help column revealator-fade revealator-once revealator-duration15">
+                    <div class="header">Помощь покупателю</div>
+                    <a href="#">Публичная оферта</a>
+                    <a href="#">Разрешительные документы</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Правила обмена и возврата</a>
+                    <a href="#">Рекоммендации по применению</a>
+                </div>
+                <div class="contacts column revealator-fade revealator-once revealator-duration19">
+                    <div class="header">Наши контакты</div>
+                    <a class="tel" href="tel: 83832925937">8(383) 292-59-373 <span> Диспетчер, с 09 до 19</span></a>
+                    <a class="tel" href="tel: 88005003343">8(800) 500-33-43 <span> Горячая линия</span></a>
+                    <p>г. Новосибирск, ул. Лесосечная, 3/1</p>
+                    <a href="mailto:dostavka@biovesta.ru">dostavka@biovesta.ru</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="divider"></div>
+        <div class="attention">БАД. НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ. ДЕТЯМ ДО 14 ЛЕТ ТРЕБУЕТСЯ КОНСУЛЬТАЦИЯ ПЕДИАТРА.</div>
+        <div class="bottom">
+            <div class="bottom_wrapper">
+                <div class="social_icons">
+                    <a href="#"><img src="./Images/Header/Instagram_icon.png" alt="instagram"></a>
+                    <a href="#"><img src="./Images/Header/VK_icon.png" alt="vkontakte"></a>
+                </div>
+                <a href="#" class="subscribe">Подписатся на e-mail рассылку</a>
+                <div class="search_input">
+                    <img src="./Images/Header/Search_icon.png" alt="Search_icon">
+                    <input type="text" class="search" placeholder="Поиск товаров">
+                </div>
+                <a class="aliance" href="https://alianscompany.ru/" target="blank"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/slick.js"></script>
+    <script src="./js/slider_hits.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
