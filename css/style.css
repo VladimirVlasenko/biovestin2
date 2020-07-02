@@ -3292,6 +3292,9 @@ footer .bottom .bottom_wrapper .aliance {
     color: #FFFFFF;
     position: relative;
 }
+.catalog_main .wrapper .container .side_panel .side_categories label a {
+    color: #ffffff;
+}
 
 .catalog_main .wrapper .container .side_panel .side_categories label:hover {
     cursor: pointer;
@@ -3841,6 +3844,9 @@ footer .bottom .bottom_wrapper .aliance {
     color: #FFFFFF;
     position: relative;
     cursor: pointer;
+}
+.catalog_main .wrapper .categories_hidden .category_item label a {
+    color: #ffffff;
 }
 
 
