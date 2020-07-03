@@ -179,7 +179,7 @@ header .h_c_w .hidden_cart .header .number {
     text-align: left;
 }
 
-header .h_c_w .hidden_cart .header .order {
+header .h_c_w .hidden_cart .header .header_order {
     background: linear-gradient(180deg, #FF6B22 0%, #E24908 100%);
     border-radius: 32px;
     width: 177px;
