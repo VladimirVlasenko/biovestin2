@@ -3356,6 +3356,23 @@ footer .bottom .bottom_wrapper .aliance {
     box-sizing: border-box;
     box-shadow: 0px 0px 5px 2px #FFFFFF;
 }
+.catalog_main .wrapper .container .side_panel .side_categories .category_item.active span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 18px;
+    top: 14px;
+    background: url('../Images/Catalog/radio_unchecked.png') no-repeat center center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 2px #FFFFFF;
+}
+.catalog_main .wrapper .container .side_panel .side_categories .category_item.active {
+    background-color: #ffffff;
+    color: #223038;
+    text-decoration: none;
+}
 
 /* Конец скрытых категорий */
 
