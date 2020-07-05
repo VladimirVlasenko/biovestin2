@@ -3378,7 +3378,6 @@ footer .bottom .bottom_wrapper .aliance {
 
 .catalog_main .wrapper .container .side_panel .subscribe_side_panel {
     width: 280px;
-    height: 312px;
     background: #E5F1F5;
     border: 3px solid #D3E7EE;
     box-sizing: border-box;
@@ -3387,6 +3386,11 @@ footer .bottom .bottom_wrapper .aliance {
     padding: 23px 32px;
     box-sizing: border-box;
     margin-bottom: 15px;
+}
+.catalog_main .wrapper .container .side_panel .subscribe_side_panel .result {
+    display: none;
+    margin: 0 auto;
+    margin-bottom: 16px;
 }
 
 .catalog_main .wrapper .container .side_panel .subscribe_side_panel .text {
